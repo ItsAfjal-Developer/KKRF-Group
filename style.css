@@ -1736,7 +1736,7 @@ body.menu-open .mobile-nav {
     position: relative;
     align-items: center;
     padding: 10px 0 80px;
-    background: url("Images/image 52.png") center/cover no-repeat;
+    background: url("http://kkrfgroup.com/wp-content/uploads/2025/12/image-52-scaled.png") center/cover no-repeat;
 }
 
 .hero::before {
@@ -1858,13 +1858,41 @@ body.menu-open .mobile-nav {
     margin-bottom: 14px;
 }
 
-#choose {
-    margin-right: 5px;
+select {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 48px 10px 19px; /* right gap for arrow */
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* remove native arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* custom arrow */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 14px;
 }
 
+select:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: #eff7f3;
+    box-shadow: 0 0 0 3px rgba(229, 238, 234, 0.25);
+}
+
+
 input,
-textarea,
-select {
+textarea {
     width: 100%;
     color: #fff;
     outline: none;
@@ -1872,7 +1900,7 @@ select {
     padding: 10px 19px;
     border-radius: 10px;
     transition: all 0.25s ease;
-    background: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
