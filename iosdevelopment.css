@@ -539,7 +539,12 @@ textarea {
 
 @media (max-width: 480px) {
     .recognition-title {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .recognition-section .container{
+        margin: 0 10px;
     }
 
     .recognition-btn {
@@ -773,6 +778,10 @@ textarea {
         gap: 28px;
     }
 
+    .kkrf-why-container{
+        margin: 0 10px;
+    }
+
     .kkrf-why-tabs {
         gap: 12px;
         position: static;
@@ -822,6 +831,10 @@ textarea {
 @media (max-width: 480px) {
     .kkrf-why-section {
         padding: 60px 16px;
+    }
+
+    .kkrf-why-container{
+        margin: 0 10px;
     }
 
     .kkrf-content-body h3 {

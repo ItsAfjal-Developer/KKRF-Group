@@ -314,6 +314,7 @@ textarea {
 
 /*! End Hero Section Bar */
 
+
 /*! Start Partner Section Bar */
 
 .partner-section {
@@ -363,33 +364,27 @@ textarea {
 
 /* ========== RIGHT COLUMN (DESKTOP SCROLL) ========== */
 .features-container {
-    flex: 1 1 60%;
-    overflow-y: auto;
-    padding-left: 90px;
-    box-sizing: border-box;
-    max-height: calc(100vh - 160px);
-    -webkit-overflow-scrolling: touch;
+  flex: 1;
+  height: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 .feature-list {
-    gap: 22px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 /* ========== FEATURE CARD ========== */
 .feature-box {
-    gap: 18px;
-    display: flex;
-    color: #fff;
-    padding: 16px;
-    border-radius: 12px;
-    align-items: flex-start;
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: linear-gradient(180deg, #0b0b0b, #111);
+  background: linear-gradient(135deg, #0d0d0d, #000);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
 @media (min-width: 992px) {
