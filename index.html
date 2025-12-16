@@ -110,10 +110,12 @@
                                     <!-- ALL SERVICES -->
                                     <div class="service-detail active"
                                         data-service="all">
-                                        <h3
-                                            class="service-main-title all-services-title">
-                                            All Services
-                                        </h3>
+                                        <a href>
+                                            <h3
+                                                class="service-main-title all-services-title">
+                                                All Services
+                                            </h3>
+                                        </a>
 
                                         <div class="all-services-grid">
                                             <!-- LEFT COLUMN -->
@@ -227,7 +229,8 @@
                                                             </li>
                                                         </a>
                                                         <a href>
-                                                            <li>Cloud
+                                                            <li>
+                                                                Cloud
                                                                 Services
                                                             </li>
                                                         </a>
@@ -4368,15 +4371,6 @@
         <!-- End Bi Section Bar -->
 
         <!-- Start Site Footer Section Bar -->
-        <!-- Footer Logo -->
-        <!-- <div class="footer-logo-wrap">
-            <img
-                src="http://kkrfgroup.com/wp-content/uploads/2025/12/kkrf-gray-color.svg"
-                alt="KKRF Logo"
-                class="footer-logo">
-        </div> -->
-
-        <!-- ================= FOOTER ================= -->
         <footer class="site-footer">
 
             <div class="footer-container">
@@ -4386,7 +4380,8 @@
 
                     <!-- LOGO (MISSING PART – NOW FIXED) -->
                     <div class="footer-logo">
-                        <img src="http://kkrfgroup.com/wp-content/uploads/2025/12/kkrf-gray-color.svg"
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2025/12/kkrf-gray-color.svg"
                             alt="KKRF Group Logo">
                     </div>
 
@@ -4465,7 +4460,7 @@
 
             <!-- Bottom -->
             <div class="footer-bottom-inner">
-                <div class="footer-copy">© 2025 KKRF. All rights reserved.</div>
+                <div class="footer-copy">© 2025 KKRF. All Rights Reserved.</div>
 
                 <div class="footer-policies">
                     <a href="#">Privacy Policy</a>
@@ -4481,44 +4476,44 @@
             </div>
 
         </footer>
-
         <!-- End Site Footer Section Bar -->
 
+        <!-- Add the Javascript Footer Toggle -->
         <script>
-  document.querySelectorAll(".js-footer-toggle").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
+          document.querySelectorAll(".js-footer-toggle").forEach((btn) => {
+              btn.addEventListener("click", () => {
+                 btn.classList.toggle("active");
 
-      const list = btn.nextElementSibling;
-      list.classList.toggle("active");
-    });
-  });
-</script>
+                 const list = btn.nextElementSibling;
+                 list.classList.toggle("active");
+                });
+            });
+        </script>
+        <!-- End the Javascript Footer Toggle -->
 
-<!-- FINAL JS (Scroll → Footer Slide-Up Animation)    -->
+        <!-- Add the Javascript (Scroll → Footer Slide-Up Animation) -->
+        <script>
+           document.addEventListener("DOMContentLoaded", () => {
+             const footer = document.querySelector(".site-footer");
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const footer = document.querySelector(".site-footer");
+              const observer = new IntersectionObserver(
+                  (entries) => {
+                       entries.forEach(entry => {
+                          if (entry.isIntersecting) {
+                             footer.classList.add("footer-visible");
+                             observer.unobserve(footer); 
+                            }
+                        });
+                    },
+                   {
+                     threshold: 0.15
+                    }
+                );
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            footer.classList.add("footer-visible");
-            observer.unobserve(footer); // animate only once
-          }
-        });
-      },
-      {
-        threshold: 0.15
-      }
-    );
-
-    observer.observe(footer);
-  });
-</script>
-
+                observer.observe(footer);
+            });
+        </script>
+        <!-- End the Javascript (Scroll → Footer Slide-Up Animation) -->
 
         <!-- Start Mobile Overlay -->
         <div class="mobile-menu-overlay"></div>
