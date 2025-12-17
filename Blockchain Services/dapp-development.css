@@ -1,0 +1,15 @@
+/*! Start Feature Icon Wrapper Section */
+.feature-icon-wrapper {
+    width: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon-wrapper svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/*! End Feature Icon Wrapper Section */
