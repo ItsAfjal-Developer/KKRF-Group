@@ -563,6 +563,14 @@ textarea {
 }
 
 /* RESPONSIVE */
+@media (min-width: 993px) {
+  .mv-insights-right {
+    position: sticky;
+    top: 180px;
+    align-self: flex-start;
+  }
+}
+
 @media (max-width: 992px) {
 
   .mv-insights-grid {
