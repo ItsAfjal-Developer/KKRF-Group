@@ -1,0 +1,28 @@
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 42px;
+}
+
+.industries-heading {
+    font-size: 34px;
+    font-weight: 700;
+    color: #f8f8f8;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.industries-intro {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}

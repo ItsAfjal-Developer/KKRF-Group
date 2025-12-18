@@ -1,0 +1,42 @@
+<!--Start Announcement Bar -->
+#EXPLORE NOW
+<!--End Announcement Bar -->
+
+Symbols - { & -> &amp; }
+
+<!-- ALL SERVICES -->
+#All Services
+
+<!-- LEFT COLUMN -->
+#Our Comprehensive Approach
+#Integrated Solutions
+#Technology Partnerships
+
+<!-- RIGHT COLUMN -->
+#Industry-Specific Expertise
+#Global Delivery Capabilities
+
+1. #Software Development
+2. #Blockchain Services
+3. #Cloud Services
+
+<!-- SOFTWARE DEVELOPMENT -->
+#Software Development
+
+<!-- BLOCKCHAIN SERVICES -->
+#Blockchain Services
+
+<!-- CLOUD SERVICES -->
+#Cloud Services
+
+<!-- IT CONSULTING -->
+#IT Consulting
+
+<!-- DATA ANALYTICS -->
+#Data Analytics
+
+<!-- DEVOPS -->
+#DevOps
+
+<!-- LATEST NEWS -->
+#View All News
