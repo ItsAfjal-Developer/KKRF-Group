@@ -10,7 +10,7 @@
   padding: 10px 0 80px;
   align-items: flex-end;
 
-  background-image: url("/Images/blockchain\ banner01.jpg");
+  background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/metaverse-banner-scaled.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -308,7 +308,7 @@ textarea {
     padding: 70px 0 40px;
   }
 
-  
+
 
   .hero-text h1 {
     font-size: 22px;
@@ -322,6 +322,12 @@ textarea {
 /*! End Hero Section Bar */
 
 /*! Start Feature Icon Wrapper Bar */
+.intro-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
 
 .feature-icon-wrapper {
   width: 30px;
