@@ -1,6 +1,6 @@
 /*! Start Hero Section Bar */
 
-/* ================== HERO – DESKTOP BASE ================== */
+/* ================== HERO ================== */
 .hero {
   width: 100%;
   display: flex;
@@ -315,7 +315,9 @@ textarea {
 
 /*! End Hero Section Bar */
 
+
 /*! Start Feature Icon Wrapper Bar */
+
 .intro-text {
   color: #000;
   font-size: 16px;
@@ -337,6 +339,7 @@ textarea {
 }
 
 /*! End Feature Icon Wrapper Bar */
+
 
 /*! Start App Benefits Section Bar */
 
