@@ -318,7 +318,16 @@ textarea {
 
 /*! End Hero Section Bar */
 
+
 /*! Start Feature Icon Wrapper Section */
+
+.intro-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
 .feature-icon-wrapper {
     width: 30px;
     height: 50px;
@@ -333,6 +342,7 @@ textarea {
 }
 
 /*! End Feature Icon Wrapper Section */
+
 
 /*! Start Clients Section Bar */
 
@@ -817,6 +827,8 @@ textarea {
 }
 
 /*! End Trusted Section Bar */
+
+
 /*! Start NFT Metaverse Section Bar */
 
 .nft-metaverse-section {
