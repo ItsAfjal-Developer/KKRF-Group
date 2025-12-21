@@ -9,7 +9,7 @@
     align-items: flex-end;
     padding: 10px 0 80px;
 
-    background-image: url("/Images/ERP.jpg");
+    background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/ERP-scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -133,10 +133,6 @@
 .form-group label {
     font-size: 14px;
     margin-bottom: 14px;
-}
-
-#choose {
-    margin-right: 5px;
 }
 
 input,
@@ -318,7 +314,16 @@ textarea {
 
 /*! End Hero Section Bar */
 
+
 /*! Start Feature Icon Wrapper Section */
+
+.intro-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
 .feature-icon-wrapper {
     width: 30px;
     height: 50px;
@@ -333,6 +338,7 @@ textarea {
 }
 
 /*! End Feature Icon Wrapper Section */
+
 
 /*! Start Clients Section Bar */
 
@@ -817,6 +823,7 @@ textarea {
 }
 
 /*! End Trusted Section Bar */
+
 
 /*! Start NFT Metaverse Section Bar */
 
