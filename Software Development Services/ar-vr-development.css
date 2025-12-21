@@ -203,7 +203,7 @@ textarea {
     display: none;
 }
 
-/* ================== TABLET ================== */
+/* ================== TABLET ================= */
 @media (max-width: 992px) {
     .hero-content {
         gap: 40px;
