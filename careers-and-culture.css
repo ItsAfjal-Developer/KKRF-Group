@@ -1,0 +1,643 @@
+/* =====================================================
+   KKRF Group | Career & Culture Hero Section
+===================================================== */
+
+.kkrf-career-culture-hero {
+    position: relative;
+    width: 100%;
+
+    /* 🔥 FIX HERE */
+    min-height: 82vh;   /* minimum height */
+    height: auto;       /* content ke hisaab se grow */
+
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: kkrfCareerHeroSlideshow 14s infinite ease-in-out;
+}
+
+/* ===== Background Slideshow ===== */
+@keyframes kkrfCareerHeroSlideshow {
+    0% {
+        background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/agile-erp-software-scaled.jpg");
+    }
+
+    25% {
+        background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/futuristic-technology-concept-scaled.jpg");
+    }
+
+    50% {
+        background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/Advanced-AWS-DevOps-Automation.avif");
+    }
+
+    75% {
+        background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/Expert-NFT-Integration-scaled.jpg");
+    }
+
+    100% {
+        background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/metaverse-recognitions-scaled.jpg");
+    }
+}
+
+/* =====================================================
+   Overlay
+===================================================== */
+
+.kkrf-career-culture-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.45) 55%,
+            rgba(0, 0, 0, 0.2) 100%);
+}
+
+/* =====================================================
+   Fixed Width Container (1290px)
+===================================================== */
+
+.kkrf-career-culture-container {
+    width: 100%;
+    /* min-height: 60vh; */
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+
+/* =====================================================
+   Content
+===================================================== */
+
+.kkrf-career-culture-content {
+    max-width: 650px;
+    color: #ffffff;
+    animation: kkrfFadeUp 1.2s ease forwards;
+}
+
+@keyframes kkrfFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tagline */
+.kkrf-career-culture-tagline {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #cfcfcf;
+    margin-bottom: 14px;
+}
+
+/* Title */
+.kkrf-career-culture-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg, #ffffff 0%, #bdbdbd 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.kkrf-career-culture-description {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: #d0d0d0;
+    margin-bottom: 32px;
+}
+
+/* =====================================================
+   Buttons
+===================================================== */
+
+.kkrf-career-culture-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.kkrf-career-culture-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+/* Primary */
+.kkrf-career-culture-btn.primary-btn {
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.kkrf-career-culture-btn.primary-btn:hover {
+    transform: translateY(-4px);
+    background: #f1f1f1;
+}
+
+/* Secondary */
+.kkrf-career-culture-btn.secondary-btn {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.kkrf-career-culture-btn.secondary-btn:hover {
+    background: #ffffff;
+    color: #000;
+    transform: translateY(-4px);
+}
+
+/* =====================================================
+   Mobile Slideshow
+===================================================== */
+
+.kkrf-career-culture-mobile-slider {
+    display: none;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 768px) {
+    .kkrf-career-culture-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .kkrf-career-culture-hero {
+        height: auto;
+        background: none;
+        animation: none;
+    }
+
+    .kkrf-career-culture-overlay {
+        position: relative;
+        padding: 48px 0;
+        text-align: center;
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.85),
+                rgba(0, 0, 0, 0.65));
+    }
+
+    .kkrf-career-culture-content {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .kkrf-career-culture-title {
+        font-size: 1.65rem;
+        line-height: 1.3;
+    }
+
+    .kkrf-career-culture-description {
+        font-size: 0.75rem;
+        margin: 0 34px;
+        margin-bottom: 30px;
+    }
+
+    .kkrf-career-culture-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kkrf-career-culture-btn {
+        width: 100%;
+        font-size: 12px;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    /* Mobile slideshow */
+    .kkrf-career-culture-mobile-slider {
+        display: block;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .kkrf-career-culture-mobile-slide {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: kkrfCareerHeroSlideshow 14s infinite ease-in-out;
+    }
+}
+
+@media (max-width: 360px) {
+    .kkrf-career-culture-title {
+        font-size: 1.65rem;
+    }
+}
+
+/* =====================================================
+   Why Work With KKRF Section
+===================================================== */
+
+.kkrf-career-why-section {
+  width: 100%;
+  padding: 100px 0;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+/* ===== Container (1290px) ===== */
+.kkrf-career-why-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 4px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ===== Content ===== */
+.kkrf-career-why-title {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #bdbdbd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.kkrf-career-why-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-bottom: 18px;
+}
+
+/* ===== Image ===== */
+/* RIGHT IMAGE – push to right */
+.kkrf-career-why-image {
+  display: flex;
+  justify-content: flex-end; /* 🔥 main fix */
+}
+
+.kkrf-career-why-image img {
+  width: 100%;
+  max-width: 420px;
+   object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.kkrf-career-why-image img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* =====================================================
+   Scroll Animations
+===================================================== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 1s ease;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 768px) {
+  .kkrf-career-why-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0 16px;
+  }
+
+  .kkrf-career-why-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .kkrf-career-why-title {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+
+   .kkrf-career-why-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .kkrf-career-why-section {
+    padding: 60px 0 10px 0;
+  }
+
+  .kkrf-career-why-title {
+    font-size: 1.85rem;
+    text-align: left;
+  }
+
+ .kkrf-career-why-text {
+    font-size: 0.95rem;
+    text-align: left;
+}
+}
+
+/* =====================================================
+   Trending Opportunities – Light Theme
+===================================================== */
+
+/* =====================================================
+   Trending Opportunities – Career Page
+===================================================== */
+
+.kkrf-career-trending-section {
+  background: #f8f8f8;
+  padding: 38px 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* ================= Container ================= */
+
+.kkrf-career-trending-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+/* ================= Header ================= */
+
+.kkrf-career-trending-header {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.kkrf-career-trending-header h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.kkrf-career-trending-header p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   Filters (Slide Up Animation)
+===================================================== */
+
+.kkrf-career-trending-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+  margin: 40px auto 60px;
+
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease;
+}
+
+.kkrf-career-trending-filters.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= Search Box ================= */
+
+.kkrf-career-search-box {
+  position: relative;
+  width: 240px;
+}
+
+.kkrf-career-search-box input {
+  width: 100%;
+  height: 52px;
+  padding: 0 44px 0 16px;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.kkrf-career-search-box input::placeholder {
+  color: #666;
+}
+
+.kkrf-career-search-box i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+/* ================= Select Boxes ================= */
+
+.kkrf-career-selects {
+  display: flex;
+  gap: 18px;
+}
+
+/* Select field */
+.kkrf-career-selects select {
+  width: 220px;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.95rem;
+  cursor: pointer;
+
+  /* remove native styles */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+}
+
+/* Options text color */
+.kkrf-career-selects select option {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Hover & selected option (Firefox support) */
+.kkrf-career-selects select option:hover,
+.kkrf-career-selects select option:checked {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+/* Focus – remove blue glow */
+.kkrf-career-selects select:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* =====================================================
+   Job Cards (Fade + Lift)
+===================================================== */
+
+.kkrf-career-job-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.kkrf-career-job-card {
+  background: #e9e9e9;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #d0d0d0;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease;
+}
+
+.kkrf-career-job-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Top strip */
+.kkrf-career-job-card::before {
+  content: "Latest Opening";
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #000, #212121, #000);
+}
+
+/* Card Content */
+.kkrf-career-job-card h3 {
+  font-size: 1.2rem;
+  padding: 20px 20px 6px;
+}
+
+.kkrf-career-job-card p {
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.kkrf-career-job-card a {
+  display: inline-block;
+  padding: 14px 20px 22px;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.kkrf-career-job-card a i {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+.kkrf-career-job-card:hover {
+  transform: translateY(-8px);
+  background: #dedede;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.kkrf-career-job-card:hover a i {
+  transform: translateX(6px);
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1024px) {
+  .kkrf-career-job-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kkrf-career-trending-filters {
+    flex-wrap: wrap;
+  }
+
+  .kkrf-career-search-box,
+  .kkrf-career-selects select {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .kkrf-career-selects {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+   .kkrf-career-trending-container {
+    margin: 0 20px;
+   } 
+  .kkrf-career-job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kkrf-career-trending-header h2 {
+    font-size: 30px;
+  }
+
+  .kkrf-career-trending-filters {
+    gap: 12px;
+  }
+}

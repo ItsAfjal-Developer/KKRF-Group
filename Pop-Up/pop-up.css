@@ -1,0 +1,468 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #000;
+}
+
+/* ================= OPEN BUTTON ================= */
+#openPopup {
+    padding: 10px 22px;
+    margin: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ================= POPUP OVERLAY ================= */
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ================= MAIN POPUP ================= */
+.popup-content {
+    width: 900px;
+    background: #fff;
+    display: flex;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    position: relative;
+    animation: scaleUp 0.35s ease;
+}
+
+/* CLOSE */
+.close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ================= LEFT SECTION ================= */
+.popup-left {
+    width: 40%;
+    background: #f8f8f8;
+    padding: 40px 30px;
+}
+
+.left-heading {
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.left-subheading {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 44px;
+}
+
+/* ================= TESTIMONIAL CARD ================= */
+.testimonial-card {
+    background: #fff;
+    border-radius: 14px;
+
+    /* 🔥 IMPORTANT CHANGE */
+    padding: 72px 22px 22px;
+    /* was 46px → now 72px */
+
+    text-align: center;
+    position: relative;
+    max-width: 320px;
+    min-height: 280px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= PROFILE IMAGE (JUMP FIX) ================= */
+.profile-img {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #f8f8f8;
+}
+
+/* ================= SLIDES ================= */
+.slide {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* NAME */
+.testimonial-card h4 {
+    margin-top: 64px;
+    font-size: 15px;
+}
+
+.testimonial-text {
+    margin: 0 12px;
+}
+
+/* ROLE */
+.role {
+    display: inline-block;
+    margin: 6px 0 12px;
+    padding: 4px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #000;
+}
+
+/* QUOTE */
+.quote-icon {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* TEXT */
+.testimonial-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000;
+    max-height: 120px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* ================= RIGHT FORM ================= */
+.popup-right {
+    width: 60%;
+    padding: 30px;
+}
+
+.popup-right h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* INPUTS */
+.popup-right input,
+.popup-right textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    font-size: 14px;
+    background: #fff;
+    color: #000;
+}
+
+/* Actual typed text */
+.popup-right input,
+.popup-right textarea {
+  color: #000 !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+
+  -webkit-text-fill-color: #000 !important;
+}
+
+.popup-right textarea {
+    min-height: 90px;
+    resize: none;
+}
+
+/* Placeholder text */
+.popup-right input::placeholder,
+.popup-right textarea::placeholder {
+  color: #666 !important;
+  opacity: 1 !important;
+
+  -webkit-text-fill-color: #666 !important;
+}
+
+/* Safari / Chrome autofill fix */
+.popup-right input:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #222;
+}
+
+/* FORM FOOTER */
+.form-footer {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #000;
+}
+
+.form-footer p {
+    margin-bottom: 6px;
+}
+
+/* ================= BRAND STRIP ================= */
+.popup-brands {
+    width: 900px;
+    background: #fff;
+    padding: 18px 30px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* STATS */
+.brand-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat h3 {
+    color: #000;
+    font-size: 22px;
+}
+
+.stat p {
+    font-size: 12px;
+    color: #000;
+    max-width: 160px;
+}
+
+/* LOGOS */
+.brand-logos {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.brand-logos img {
+    height: 28px;
+    opacity: 0.85;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeStable {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= MOBILE FINAL (TEXT-BASED, CLEAN) ================= */
+@media (max-width: 768px) {
+
+    /* Popup overlay */
+    .popup {
+        padding: 12px;
+        align-items: center;
+    }
+
+    /* Main popup container */
+    .popup-content {
+        width: 100%;
+        max-width: 380px;
+        flex-direction: column;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* ================= LEFT SECTION → TEXT HEADER ================= */
+    .popup-left {
+        width: 100%;
+        padding: 16px;
+        background: #f3f3f3;
+        text-align: left;
+    }
+
+    /* ❌ REMOVE IMAGE BANNER COMPLETELY */
+    .popup-left::before {
+        display: none !important;
+    }
+
+    /* Show heading text */
+    .left-heading {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 6px;
+    }
+
+    .left-subheading {
+        display: block;
+        font-size: 13px;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    /* ❌ Hide testimonial card on mobile */
+    .testimonial-card {
+        display: none;
+    }
+
+    /* ================= RIGHT FORM ================= */
+    .popup-right {
+        width: 100%;
+        padding: 18px 16px 20px;
+    }
+
+    /* ❌ Hide long desktop heading */
+    .popup-right h2 {
+        display: none;
+    }
+
+    /* ================= INPUTS (Underline Style) ================= */
+    .popup-right input,
+    .popup-right textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #999;
+        border-radius: 0;
+        padding: 10px 4px;
+        font-size: 14px;
+        background: transparent;
+        margin-bottom: 14px;
+    }
+
+    .popup-right input::placeholder,
+    .popup-right textarea::placeholder {
+        color: #666;
+        font-size: 13px;
+    }
+
+    .popup-right input:focus,
+    .popup-right textarea:focus {
+        outline: none;
+        border-bottom-color: #000;
+    }
+
+    .popup-right textarea {
+        resize: none;
+        min-height: 60px;
+    }
+
+    /* ================= STACK ROWS ================= */
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ================= CTA BUTTON ================= */
+    .cta-btn {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 6px;
+        background: #000;
+        color: #fff;
+        margin-top: 6px;
+    }
+
+    /* ================= FORM FOOTER ================= */
+    .form-footer {
+        font-size: 12px;
+        margin-top: 12px;
+        color: #333;
+    }
+
+    .form-footer p {
+        margin-bottom: 4px;
+    }
+
+    /* ❌ Hide brand strip on mobile */
+    .popup-brands {
+        display: none;
+    }
+
+    /* Close button */
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+    }
+}

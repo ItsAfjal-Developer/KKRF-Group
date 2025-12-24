@@ -2,6 +2,10 @@
 #EXPLORE NOW
 <!--End Announcement Bar -->
 
+<a href="#" class="cta-button" id="openPopupBtn">
+ Consult Our Experts
+</a>
+
 Symbols - { & -> &amp; }
 
 <!-- ALL SERVICES -->

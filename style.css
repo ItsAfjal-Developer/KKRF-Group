@@ -2077,9 +2077,13 @@ textarea {
 /*! Start Clients Section Bar */
 
 .clients {
-    color: #000;
     padding: 70px 0;
-    background: #f8f8f8;
+    color: #f8f8f8;
+    background: #000;
+    background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/NFT-Banner01-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .clients .container {
@@ -2090,7 +2094,7 @@ textarea {
 }
 
 .clients h2 {
-    color: #000;
+    color: #f8f8f8;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -2108,9 +2112,14 @@ textarea {
 }
 
 .client-logos img {
-    width: auto;
-    height: 48px;
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    height: 52px;
+    opacity: 0.7;
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.client-logos img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .client-logos img:nth-child(n+6) {
@@ -2183,6 +2192,7 @@ textarea {
 }
 
 /*! End Clients Section Bar */
+
 
 
 /*! Start Trusted Section Bar */
@@ -5295,7 +5305,7 @@ textarea {
 
 html,
 body {
-    background: #000;
+    background: #000 !important;
 }
 
 /* ================= FOOTER BASE ================= */
