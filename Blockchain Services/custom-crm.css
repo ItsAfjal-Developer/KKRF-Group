@@ -1,3 +1,5 @@
+/*! Start Pop Up Section Bar */
+
 body.popup-open {
     overflow: hidden;
 }
@@ -6,7 +8,6 @@ body.popup-open {
     margin-top: 40px;
 }
 
-/* POPUP OVERLAY – FIX */
 .popup {
     position: fixed;
     inset: 0;
@@ -15,12 +16,14 @@ body.popup-open {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    /* 🔥 THIS LINE FIXES OVERLAP */
     z-index: 100000;
 }
 
-/* Mobile only language selector */
+/*! End Pop Up Section Bar */
+
+
+/*! Start Select Language Button only Responsive */
+
 @media (max-width: 768px) {
 
   .mobile-lang {
@@ -31,7 +34,7 @@ body.popup-open {
 
    .lang-btn {
     width: 100%;
-    min-width: 160px;          /* 🔥 FIXED WIDTH */
+    min-width: 160px;         
     padding: 10px 14px;
     font-size: 14px;
     border-radius: 6px;
@@ -40,7 +43,7 @@ body.popup-open {
     color: #fff;
     cursor: pointer;
     text-align: left;
-    white-space: nowrap;      /* 🔥 prevents shrink */
+    white-space: nowrap;     
   }
 
   .lang-dropdown {
@@ -62,8 +65,6 @@ body.popup-open {
     padding: 10px 14px;
     font-size: 14px;
     cursor: pointer;
-
-    /* 🔥 MOST IMPORTANT */
     color: #000 !important;
     background: #fff;
   }
@@ -73,32 +74,33 @@ body.popup-open {
   }
 }
 
-/* ===== DESKTOP SELECT – FINAL FIX ===== */
+/*! End Select Language Button only Responsive */
+
+/*! Start the Android Form Group Selection */
+
 .android-form-group select {
   background-color: #000;
-  color: #fff !important;          /* 🔥 selected value */
+  color: #fff !important;          
   border: 1px solid #555;
-  appearance: none;                /* consistent rendering */
+  appearance: none;               
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-/* Placeholder / options text */
 .android-form-group select option {
   background-color: #000;
-  color: #fff;              /* 🔥 option text */
+  color: #fff;             
 }
 
 .android-form-group select option[value=""] {
-  color: #aaa;              /* light gray placeholder */
+  color: #aaa;             
 }
 
-/* ===== DESKTOP SELECT – FINAL FIX ===== */
 .android-form-group select {
   background-color: #000;
-  color: #fff !important;          /* 🔥 selected value */
+  color: #fff !important;         
   border: 1px solid #555;
-  appearance: none;                /* consistent rendering */
+  appearance: none;                
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -115,8 +117,13 @@ body.popup-open {
   }
 }
 
+/*! End the Android Form Group Selection */
+
+
+/*! Start the Android Form Group Career Link */
+
 .career-link {
-  color: #f8f8f8;          /* light purple on dark bg */
+  color: #f8f8f8;      
   text-decoration: none;
 }
 
@@ -124,12 +131,11 @@ body.popup-open {
   color: darkgrey;
 }
 
-
+/*! Start the Android Form Group Career Link */
 
 
 /*! Start Hero Section Bar */
 
-/* ================= HERO ================= */
 .hero {
     width: 100%;
     display: flex;
@@ -331,7 +337,7 @@ textarea {
     display: none;
 }
 
-/* ================== TABLET ================== */
+/* RESPONSIVE */
 @media (max-width: 992px) {
     .hero-content {
         gap: 40px;
@@ -435,12 +441,7 @@ textarea {
         object-fit: cover;
         display: block;
     }
-
-
 }
-
-
-
 
 @media (max-width: 480px) {
     .hero {
@@ -503,7 +504,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
 }
 
-/* ---------- TEXT ---------- */
+/* TEXT */
 .nft-metaverse-text h2 {
     color: #000;
     font-size: 36px;
@@ -520,7 +521,7 @@ textarea {
     margin-bottom: 16px;
 }
 
-/* ---------- VIDEO ---------- */
+/* VIDEO */
 .nft-metaverse-media {
     height: 131%;
     display: flex;
@@ -537,7 +538,7 @@ textarea {
     -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .nft-metaverse-container {
         gap: 40px;
