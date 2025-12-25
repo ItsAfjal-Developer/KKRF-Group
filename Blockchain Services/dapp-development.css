@@ -1,6 +1,6 @@
 /*! Start Hero Section Bar */
 
-/* ================= HERO ================ */
+/* HERO */
 .hero {
     width: 100%;
     display: flex;
@@ -206,7 +206,7 @@ textarea {
     display: none;
 }
 
-/* ================== TABLET ================== */
+/* RESPONSIVE */
 @media (max-width: 992px) {
     .hero-content {
         gap: 40px;
@@ -250,22 +250,19 @@ textarea {
         position: relative;
         align-items: center;
         flex-direction: column;
+
     }
 
     .hero-text {
-        flex: none;
-        z-index: 3;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 360px;
-        text-align: center;
         position: relative;
-        transition: transform 0.25s ease-out;
-    }
-
-    .hero-text.is-sticky {
-        position: sticky;
-        top: 72px;
+        z-index: 3;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 24px 16px;
+        margin-top: 40px;
+        border-radius: 16px;
+        transform: translateY(0);
+        transition: transform 0.9s ease-out;
     }
 
     .hero-text h1 {
@@ -277,29 +274,42 @@ textarea {
     .hero-text p {
         font-size: 12px;
         line-height: 1.6;
-        margin: 0 10px;
-        margin-bottom: 18px;
+        margin: 0 10px 18px;
     }
 
+    .hero-text .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 28px;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+
     .hero-mobile-video-wrapper {
+        position: relative;
+        top: auto;
+        z-index: 1;
         display: block;
         width: 100%;
+        margin: 0 auto;
         max-width: 420px;
         overflow: hidden;
-        position: relative;
         border-radius: 18px;
-        margin: 150px auto 20px;
+        transform: translateY(0);
+        transition: transform 0.35s ease-out;
         box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
-        transition: margin-top 0.25s ease-out;
-        z-index: 1;
     }
 
     .hero-mobile-video {
         width: 100%;
-        height: auto;
+        height: 360px;
+        object-fit: cover;
         display: block;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -363,7 +373,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
 }
 
-/* ---------- TEXT ---------- */
+/* TEXT */
 .nft-metaverse-text h2 {
     color: #000;
     font-size: 36px;
@@ -381,7 +391,7 @@ textarea {
 }
 
 
-/* ---------- VIDEO ---------- */
+/* VIDEO */
 .nft-metaverse-media {
     height: 132%;
     display: flex;
@@ -398,7 +408,7 @@ textarea {
     -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .nft-metaverse-container {
         gap: 10px;
