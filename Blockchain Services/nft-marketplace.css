@@ -1658,6 +1658,7 @@ textarea {
     max-height: 0;
     padding-left: 0;
     overflow: hidden;
+    font-size: 13px;
     font-weight: 550;
     color: #00000078;
     transition: max-height 0.4s ease, opacity 0.3s ease;
@@ -1702,7 +1703,7 @@ textarea {
     }
 
     .android-faq-answer {
-        font-size: 14px;
+        font-size: 13px;
         margin-right: 10px;
     }
 

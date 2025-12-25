@@ -1,11 +1,3 @@
-<!--Start Announcement Bar -->
-#EXPLORE NOW
-<!--End Announcement Bar -->
-
-<a href="#" class="cta-button" id="openPopupBtn">
- Consult Our Experts
-</a>
-
 Symbols - { & -> &amp; }
 
 <!-- ALL SERVICES -->
@@ -44,3 +36,28 @@ Symbols - { & -> &amp; }
 
 <!-- LATEST NEWS -->
 #View All News
+
+<button class="partner-btn" data-open-popup>
+  Let's partner up
+</button>
+
+<a
+ href="https://in.linkedin.com/company/kkrf-group"
+ aria-label="LinkedIn">in
+</a>
+
+<a href="https://www.facebook.com/"
+ aria-label="Facebook">f
+</a>
+
+<div class="mobile-lang">
+                            <button type="button" class="lang-btn">
+                                Select Language
+                            </button>
+
+                            <ul class="lang-dropdown">
+                                <li data-lang="en">English</li>
+                                <li data-lang="hi">Hindi</li>
+                                <li data-lang="fr">Francais</li>
+                            </ul>
+                        </div>

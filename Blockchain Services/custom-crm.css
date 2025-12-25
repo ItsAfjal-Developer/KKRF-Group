@@ -2,13 +2,6 @@ body.popup-open {
     overflow: hidden;
 }
 
-header,
-.top-bar,
-.announcement-bar {
-    z-index: 1000 !important;
-
-}
-
 .popup-content {
     margin-top: 40px;
 }
@@ -26,6 +19,112 @@ header,
     /* 🔥 THIS LINE FIXES OVERLAP */
     z-index: 100000;
 }
+
+/* Mobile only language selector */
+@media (max-width: 768px) {
+
+  .mobile-lang {
+    display: block;
+    position: relative;
+    margin-top: 12px;
+  }
+
+   .lang-btn {
+    width: 100%;
+    min-width: 160px;          /* 🔥 FIXED WIDTH */
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;      /* 🔥 prevents shrink */
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: none;
+    z-index: 9999;
+  }
+
+  .lang-dropdown li {
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+
+    /* 🔥 MOST IMPORTANT */
+    color: #000 !important;
+    background: #fff;
+  }
+
+  .lang-dropdown li:hover {
+    background: #f2f2f2;
+  }
+}
+
+/* ===== DESKTOP SELECT – FINAL FIX ===== */
+.android-form-group select {
+  background-color: #000;
+  color: #fff !important;          /* 🔥 selected value */
+  border: 1px solid #555;
+  appearance: none;                /* consistent rendering */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Placeholder / options text */
+.android-form-group select option {
+  background-color: #000;
+  color: #fff;              /* 🔥 option text */
+}
+
+.android-form-group select option[value=""] {
+  color: #aaa;              /* light gray placeholder */
+}
+
+/* ===== DESKTOP SELECT – FINAL FIX ===== */
+.android-form-group select {
+  background-color: #000;
+  color: #fff !important;          /* 🔥 selected value */
+  border: 1px solid #555;
+  appearance: none;                /* consistent rendering */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@media (max-width: 768px) {
+  .android-form-group select {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  .android-form-group select option {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
+
+.career-link {
+  color: #f8f8f8;          /* light purple on dark bg */
+  text-decoration: none;
+}
+
+.career-link:hover {
+  color: darkgrey;
+}
+
+
 
 
 /*! Start Hero Section Bar */
