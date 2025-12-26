@@ -871,9 +871,13 @@ textarea {
     margin-bottom: 16px;
 }
 
-
 /* ---------- VIDEO ---------- */
-.nft-metaverse-media img {
+.nft-metaverse-media {
+    height: 102%;
+    display: flex;
+}
+
+.nft-metaverse-media video {
     width: 100%;
     height: auto;
     object-fit: cover;
