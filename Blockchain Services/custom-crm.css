@@ -180,6 +180,7 @@ body.popup-open {
     justify-content: space-between;
 }
 
+
 /* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
@@ -201,6 +202,7 @@ body.popup-open {
     margin-bottom: 22px;
 }
 
+
 /* CTA BUTTON */
 .cta-button {
     color: #f8f8f8;
@@ -221,6 +223,7 @@ body.popup-open {
     background-color: #f8f8f8;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 /* RIGHT DESKTOP FORM */
 .contact-form {
@@ -336,6 +339,7 @@ textarea {
 .hero-mobile-video-wrapper {
     display: none;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 992px) {

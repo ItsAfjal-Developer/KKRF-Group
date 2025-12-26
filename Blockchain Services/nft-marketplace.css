@@ -477,7 +477,7 @@ textarea {
     color: #c5c5c5;
 }
 
-/* ---------- Desktop Layout: Left Tabs + Right Detail ---------- */
+/* Desktop Layout: Left Tabs + Right Detail */
 .trusted-section .ts-layout {
     gap: 1px;
     display: flex;

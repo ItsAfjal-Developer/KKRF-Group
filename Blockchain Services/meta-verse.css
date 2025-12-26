@@ -510,6 +510,7 @@ textarea {
   grid-template-columns: 1fr 1fr;
 }
 
+
 /* LEFT */
 .mv-insights-title {
   font-size: 36px;
@@ -531,6 +532,7 @@ textarea {
   color: #d1d5db;
   margin-bottom: 10px;
 }
+
 
 /* RIGHT */
 .mv-insights-right {
@@ -560,6 +562,7 @@ textarea {
   color: #e5e7eb;
 }
 
+
 /* COLORS */
 .mv-stat-item.purple .mv-stat-number {
   color: darkgray;
@@ -572,6 +575,7 @@ textarea {
 .mv-stat-item.amber .mv-stat-number {
   color: darkgray;
 }
+
 
 /* RESPONSIVE */
 @media (min-width: 993px) {
