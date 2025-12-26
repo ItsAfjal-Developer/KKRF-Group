@@ -44,6 +44,7 @@
     justify-content: space-between;
 }
 
+
 /* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
@@ -66,6 +67,7 @@
     margin-bottom: 42px;
 }
 
+
 /* CTA BUTTON */
 .cta-button {
     color: #f8f8f8;
@@ -86,6 +88,7 @@
     background-color: #f8f8f8;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 /* RIGHT DESKTOP FORM */
 .contact-form {
@@ -201,6 +204,7 @@ textarea {
 .hero-mobile-video-wrapper {
     display: none;
 }
+
 
 /* ================== TABLET ================== */
 @media (max-width: 992px) {
@@ -884,7 +888,7 @@ textarea {
     border-radius: 16px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 900px) {
   .nft-metaverse-container {
     gap: 40px;
