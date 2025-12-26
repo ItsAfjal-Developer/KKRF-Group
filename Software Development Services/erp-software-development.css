@@ -38,6 +38,7 @@
     justify-content: space-between;
 }
 
+
 /* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
@@ -81,6 +82,7 @@
     background-color: #f8f8f8;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 /* RIGHT DESKTOP FORM */
 .contact-form {
@@ -867,7 +869,7 @@ textarea {
 
 /* ---------- VIDEO ---------- */
 .nft-metaverse-media {
-    height: 125.7%;
+    height: 122.9%;
     display: flex;
 }
 

@@ -392,7 +392,7 @@
 
                                                 <div class="software-item">
                                                     <a
-                                                        href="/Software Development Services/microservice.html">
+                                                        href="microservice.html">
                                                         <h4
                                                             class="software-title">
                                                             Microservices
@@ -4022,7 +4022,7 @@
                 });
             });
         </script>
-        <!-- Start the Javascript Part → Footer Toggle -->
+        <!-- End the Javascript Part → Footer Toggle -->
 
         <!-- Start the Javascript Part → Scroll - Footer Slide-Up Animation -->
         <script>
@@ -4562,43 +4562,50 @@
         <!-- Start the Javascript Part → the Select Language Button only Responsive -->
         <script>
           document.addEventListener("DOMContentLoaded", () => {
-             const langBtn = document.querySelector(".lang-btn");
-             const dropdown = document.querySelector(".lang-dropdown");
+              const DEFAULT_TEXT = "Select Language";
+              document.addEventListener("click", (e) => {
+                 /* LANG BUTTON CLICK */
+                 const langBtn = e.target.closest(".lang-btn");
+                  if (langBtn) {
+                     e.stopPropagation();
 
-             if (!langBtn || !dropdown) return;
+                     const wrapper = langBtn.closest(".mobile-lang");
+                     const dropdown = wrapper.querySelector(".lang-dropdown");
+                     const isSelected = langBtn.dataset.selected === "true";
 
-             const defaultText = "Select Language";
-             let selected = false;
+                     // Reset if Already Selected
+                     if (isSelected) {
+                         langBtn.textContent = DEFAULT_TEXT;
+                         langBtn.dataset.selected = "false";
+                         dropdown.style.display = "none";
+                         return;
+                        }
 
-             // Toggle Dropdown
-             langBtn.addEventListener("click", (e) => {
-                 e.stopPropagation();
+                     // Toggle dropdown
+                     dropdown.style.display =
+                     dropdown.style.display === "block" ? "none" : "block";
 
-                 // If Already Selected → Reset
-                  if (selected) {
-                     langBtn.textContent = defaultText;
-                     selected = false;
+                     return;
+                    }
+
+                 /* LANG Language Select */
+                 const langItem = e.target.closest(".lang-dropdown li");
+                  if (langItem) {
+                     const wrapper = langItem.closest(".mobile-lang");
+                     const btn = wrapper.querySelector(".lang-btn");
+                     const dropdown = wrapper.querySelector(".lang-dropdown");
+
+                     btn.textContent = langItem.textContent;
+                     btn.dataset.selected = "true";
                      dropdown.style.display = "none";
                      return;
                     }
 
-                 dropdown.style.display =
-                 dropdown.style.display === "block" ? "none" : "block";
-                });
-
-             // Select Language
-             dropdown.querySelectorAll("li").forEach(item => {
-                 item.addEventListener("click", () => {
-                     langBtn.textContent = item.textContent;
-                     selected = true;
-                     dropdown.style.display = "none";
+                 /* OUTSIDE CLICK CLOSE */
+                 document.querySelectorAll(".lang-dropdown").forEach(dd => {
+                     dd.style.display = "none";
                     });
                 });
-
-             // Outside Click Close
-             document.addEventListener("click", () => {
-                  dropdown.style.display = "none";
-                });          
             });
         </script>
         <!-- End the Javascript Part → the Select Language Button only Responsive -->

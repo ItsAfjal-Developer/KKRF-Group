@@ -98,8 +98,6 @@
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.45);
 }
 
-
-/* Close button – hidden on desktop */
 .form-close {
     top: 10px;
     right: 12px;
@@ -116,8 +114,6 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-
-/* Form fields */
 .form-row {
     gap: 22px;
     display: flex;
@@ -889,7 +885,7 @@ textarea {
     -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 900px) {
     .nft-metaverse-container {
         gap: 10px;
