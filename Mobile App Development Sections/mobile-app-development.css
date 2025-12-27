@@ -1,18 +1,17 @@
-/* ================= SECTION ================= */
+/*! Start Hero Section Bar */
+
 .kkrf-main-new-mobile-ad-top-section {
   background: #000;
   padding: 40px 0;
   font-family: Arial, sans-serif;
 }
 
-/* ================= CONTAINER ================= */
 .kkrf-main-new-mobile-ad-container {
   max-width: 1290px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/* ================= SCROLL WRAPPER ================= */
 .kkrf-main-new-mobile-ad-scroll-wrapper {
   position: relative;
   height: 200vh;
@@ -24,7 +23,6 @@
   top: 100vh;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
   overflow: hidden;
   z-index: 1;
 }
@@ -42,12 +40,10 @@
   position: sticky;
   top: 0;
   height: 90vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   z-index: 2;
   pointer-events: none;
@@ -58,7 +54,6 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
-
   background: linear-gradient(90deg, #f0f0f0, #bdbdbd);
   background-clip: text;
   -webkit-background-clip: text;
@@ -92,186 +87,178 @@
   transform: translateY(-3px);
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
 }
+
 /* ================= MOBILE OPTIMIZATION ================= */
 @media (max-width: 576px) {
-
-  /* overall section spacing */
   .kkrf-main-new-mobile-ad-top-section {
     padding: 16px 0;
   }
 
- 
-  /* MAIN WRAPPER HEIGHT (reduced) */
   .kkrf-main-new-mobile-ad-scroll-wrapper {
-    height: 120vh;              /* 👈 controlled scroll */
+    height: 120vh;
     display: block;
   }
 
-  /* video reveal zone */
   .kkrf-main-new-mobile-ad-scroll-video {
-    top: 60vh;            /* pehle 70–100vh */
-    height: 60vh;         /* 👈 main fix: video height kam */
+    top: 60vh;
+    height: 60vh;
   }
 
-  
-  /* sticky text area */
   .kkrf-main-new-mobile-ad-scroll-fixed-content {
     height: 70vh;
     padding-top: 62px;
   }
 
-
-
-  /* ===== TEXT SIZE FIX ===== */
   .kkrf-main-new-mobile-ad-scroll-fixed-content h1 {
-    font-size: 1.6rem;   /* 👈 smaller heading */
+    font-size: 1.3rem;
     line-height: 1.25;
     margin-bottom: 12px;
   }
 
   .kkrf-main-new-mobile-ad-scroll-fixed-content p {
-    font-size: 0.95rem;  /* 👈 smaller paragraph */
+    font-size: 0.82rem;
     line-height: 1.6;
     margin-bottom: 22px;
     max-width: 92%;
   }
 
-  /* ===== BUTTON ===== */
   .kkrf-main-new-mobile-ad-section-btn {
     padding: 11px 22px;
     font-size: 0.9rem;
     border-radius: 6px;
   }
-
- /* video itself */
+  
   .kkrf-main-new-mobile-ad-scroll-video video {
     height: 100%;
     object-fit: cover;
   }
 }
 
+/*! End Hero Section Bar */
 
 
 /*! Start Clients Section Bar */
 
 .clients {
-    padding: 70px 0;
-    color: #f8f8f8;
-    background: #000;
-    background-image: url("/Images/NFT\ Banner01.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  padding: 70px 0;
+  color: #f8f8f8;
+  background: #000;
+  background-image: url("/Images/NFT\ Banner01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .clients .container {
-    margin: 0 auto;
-    padding: 0 12px;
-    max-width: 1290px;
-    text-align: center;
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1290px;
+  text-align: center;
 }
 
 .clients h2 {
-    color: #f8f8f8;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 50px;
+  color: #f8f8f8;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .client-marquee {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .client-logos {
-    gap: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  gap: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .client-logos img {
-    height: 52px;
-    opacity: 0.7;
-    filter: grayscale(100%) brightness(0) invert(1);
+  height: 52px;
+  opacity: 0.7;
+  filter: grayscale(100%) brightness(0) invert(1);
 }
 
 .client-logos img:hover {
-    opacity: 1;
-    transform: scale(1.05);
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .client-logos img:nth-child(n+6) {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-    .clients {
-        color: #fff;
-        padding: 40px 0;
-        background: #000;
+  .clients {
+    color: #fff;
+    padding: 40px 0;
+    background: #000;
+  }
+
+  .clients .container {
+    max-width: 92%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #111;
+    text-align: center;
+    border-radius: 18px;
+    padding: 20px 18px 14px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .clients h2 {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+  }
+
+  .client-marquee {
+    width: 100%;
+    height: 40px;
+    margin-top: 6px;
+  }
+
+  .client-logos {
+    gap: 24px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: marquee 12s linear infinite;
+  }
+
+  .client-logos img {
+    height: 24px;
+    opacity: 0.8;
+    margin-top: 10px;
+    filter: grayscale(100%) contrast(1.1);
+    transform: translateY(0) scale(1);
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
+  }
+
+  .client-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
     }
 
-    .clients .container {
-        max-width: 92%;
-        margin: 0 auto;
-        overflow: hidden;
-        background: #111;
-        text-align: center;
-        border-radius: 18px;
-        padding: 20px 18px 14px;
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+    100% {
+      transform: translateX(-50%);
     }
-
-    .clients h2 {
-        color: #fff;
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 18px;
-    }
-
-    .client-marquee {
-        width: 100%;
-        height: 40px;
-        margin-top: 6px;
-    }
-
-    .client-logos {
-        gap: 24px;
-        display: flex;
-        width: max-content;
-        align-items: center;
-        animation: marquee 12s linear infinite;
-    }
-
-    .client-logos img {
-        height: 24px;
-        opacity: 0.8;
-        margin-top: 10px;
-        filter: grayscale(100%) contrast(1.1);
-        transform: translateY(0) scale(1);
-        transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
-    }
-
-    .client-logos img:hover {
-        opacity: 1;
-        filter: grayscale(0);
-        transform: translateY(-3px) scale(1.05);
-    }
-
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-50%);
-        }
-    }
+  }
 }
 
 /*! End Clients Section Bar */
 
-/* ================= Integrate Section ================= */
+
+/*! Start KKRF Integrate Services Section Bar */
+
 .kkrf-integrate-section {
   background: #000;
   padding: 80px 0;
@@ -314,7 +301,7 @@
 .kkrf-integrate-card {
   flex: 0 0 300px;
   background: linear-gradient(180deg, #151515, #0c0c0c);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 24px;
   margin-top: 10px;
@@ -353,10 +340,10 @@
 .kkrf-integrate-btn {
   width: 44px;
   height: 44px;
-  border-radius: 8px;                 /* 👈 square with soft edge */
-  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   background: #f8f8f8;
-  color: #000;                     /* 👈 icon always white */
+  color: #000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -366,9 +353,9 @@
 
 /* ===== HOVER (NO BLACK ICON) ===== */
 .kkrf-integrate-btn:hover {
-  background: rgba(255,255,255,0.08); /* 👈 subtle hover */
-  border-color: rgba(255,255,255,0.45);
-  color: #ffffff;                     /* 👈 force white */
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff;
 }
 
 /* ===== SVG ICON ===== */
@@ -377,11 +364,10 @@
   height: 18px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.4;                  /* 👈 strong */
-  stroke-linecap: square;             /* 👈 square ends */
-  stroke-linejoin: square;            /* 👈 square corners */
+  stroke-width: 2.4;
+  stroke-linecap: square;
+  stroke-linejoin: square;
 }
-
 
 /* ================= Responsive ================= */
 @media (max-width: 768px) {
@@ -404,209 +390,198 @@
   }
 }
 
-
-
-/* success sotires  */
-
+/*! End KKRF Integrate Services Section Bar */
 
 
 /*! Start Stats Section Bar */
 
 .stats {
-    padding: 60px 0;
-    background: #050505;
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 60px 0;
+  background: #050505;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .stats-card {
-    opacity: 0;
-    margin: 0 auto;
-    max-width: 1270px;
-    padding: 40px 48px;
-    text-align: center;
-    border-radius: 14px;
-    background: #f8f8f8;
-    border: 1px solid #d7d7d7;
-    transform: translateY(20px);
-    animation: statsCardFade 0.6s ease forwards;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 40px 48px;
+  text-align: center;
+  border-radius: 14px;
+  background: #f8f8f8;
+  border: 1px solid #d7d7d7;
+  transform: translateY(20px);
+  animation: statsCardFade 0.6s ease forwards;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 769px) {
-    .stats-card:hover {
-        transform: none !important;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
-        border-color: #d7d7d7 !important;
-    }
+  .stats-card:hover {
+    transform: none !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+    border-color: #d7d7d7 !important;
+  }
 }
 
 @keyframes statsCardFade {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .stats-card:hover {
-    border-color: #f8f8f8;
-    transform: translateY(-6px);
-    box-shadow: 0 28px 55px rgba(0, 0, 0, 0.45);
+  border-color: #f8f8f8;
+  transform: translateY(-6px);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.45);
 }
-
 
 /* Numbers Row */
 .stats-items {
-    gap: 36px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-    align-items: center;
-    justify-content: space-between;
+  gap: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: space-between;
 }
-
 
 /* Single Stats */
 .stat-item {
-    flex: 1;
-    opacity: 0;
-    min-width: 180px;
-    transform: translateY(18px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    animation: statsItemUp 0.6s ease-out forwards;
+  flex: 1;
+  opacity: 0;
+  min-width: 180px;
+  transform: translateY(18px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: statsItemUp 0.6s ease-out forwards;
 }
-
 
 /* Stagger Animation Delay */
 .stat-item:nth-child(1) {
-    animation-delay: 0.12s;
+  animation-delay: 0.12s;
 }
 
 .stat-item:nth-child(2) {
-    animation-delay: 0.22s;
+  animation-delay: 0.22s;
 }
 
 .stat-item:nth-child(3) {
-    animation-delay: 0.32s;
+  animation-delay: 0.32s;
 }
 
 .stat-item:nth-child(4) {
-    animation-delay: 0.42s;
+  animation-delay: 0.42s;
 }
 
 .stat-number {
-    display: block;
-    font-size: 58px;
-    font-weight: 700;
-    color: #111111;
-    margin-bottom: 8px;
+  display: block;
+  font-size: 58px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 8px;
 }
 
 .stat-label {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #555555;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #555555;
 }
 
 .stat-item:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
-
 
 /* ============ CTA BUTTON ============ */
 .stats-cta {
-    gap: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #f8f8f8;
-    overflow: hidden;
-    position: relative;
-    padding: 12px 28px;
-    align-items: center;
-    border-radius: 12px;
-    display: inline-flex;
-    text-decoration: none;
-    border: 1px solid #111111;
-    background: linear-gradient(135deg, #111111, #222222);
-    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f8f8f8;
+  overflow: hidden;
+  position: relative;
+  padding: 12px 28px;
+  align-items: center;
+  border-radius: 12px;
+  display: inline-flex;
+  text-decoration: none;
+  border: 1px solid #111111;
+  background: linear-gradient(135deg, #111111, #222222);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .stats-cta::after {
-    inset: 0;
-    opacity: 0;
-    content: "";
-    position: absolute;
-    background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.25) 0, transparent 55%);
-    transform: translateX(-40%);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+  inset: 0;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.25) 0, transparent 55%);
+  transform: translateX(-40%);
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
-
 
 /* Button Hover */
 .stats-cta:hover {
-    color: #111111;
-    background: #f8f8f8;
-    transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  color: #111111;
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
 .stats-cta:hover::after {
-    opacity: 1;
-    transform: translateX(10%);
+  opacity: 1;
+  transform: translateX(10%);
 }
 
 .stats-cta-arrow {
-    line-height: 0;
-    font-size: 18px;
-    transition: transform 0.25s ease;
+  line-height: 0;
+  font-size: 18px;
+  transition: transform 0.25s ease;
 }
-
 
 /* Arrow Slide on Hover */
 .stats-cta:hover .stats-cta-arrow {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
-
 
 /* ============ KEYFRAMES ============ */
 @keyframes statsFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(18px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes statsItemUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {
-    .stats {
-        padding: 50px 0;
-    }
+  .stats {
+    padding: 50px 0;
+  }
 
-    .stats-card {
-        padding: 32px 26px;
-        border-radius: 20px;
-    }
+  .stats-card {
+    padding: 32px 26px;
+    border-radius: 20px;
+  }
 
-    .stat-number {
-        font-size: 42px;
-    }
+  .stat-number {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 768px) {
-
   .stats {
     padding: 40px 0;
   }
@@ -618,29 +593,24 @@
     background: transparent;
   }
 
-  /* STACK ITEMS */
   .stats-items {
     gap: 14px;
     flex-direction: column;
   }
 
-  /* 👇 MAIN FIX */
   .stat-item {
     width: 100%;
     min-width: 0;
-
     display: grid;
-    grid-template-columns: 72px 1fr; /* number | text */
+    grid-template-columns: 72px 1fr;
     align-items: center;
     column-gap: 76px;
-
     padding: 16px 18px;
     border-radius: 18px;
     background: #ffffff;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
   }
 
-  /* NUMBER */
   .stat-number {
     font-size: 22px;
     font-weight: 700;
@@ -650,7 +620,6 @@
     line-height: 1;
   }
 
-  /* TEXT */
   .stat-label {
     font-size: 13px;
     line-height: 1.45;
@@ -658,13 +627,11 @@
     text-align: center;
   }
 
-  /* CTA */
   .stats-cta {
     width: 100%;
     margin-top: 18px;
     border-radius: 14px;
     justify-content: center;
-
     background: #f8f8f8;
     color: #000;
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
@@ -672,47 +639,57 @@
 }
 
 @media (max-width: 480px) {
-    .stats {
-        padding: 36px 0;
-    }
+  .stats {
+    padding: 36px 0;
+  }
 
-    .stat-item {
-        padding: 14px 14px;
-        border-radius: 16px;
-    }
+  .stat-item {
+    padding: 14px 14px;
+    border-radius: 16px;
+  }
 
-    .stat-number {
-        font-size: 22px;
-    }
+  .stat-number {
+    font-size: 22px;
+  }
 
-    .stat-label {
-        font-size: 12px;
-    }
+  .stat-label {
+    font-size: 12px;
+  }
 
-    .stats-cta {
-        font-size: 14px;
-        padding: 11px 20px;
-    }
+  .stats-cta {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
 }
+/*! End Stats Section Bar */
+
 
 /*! Start Feature Icon Wrapper Section */
+
+.intro-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
 .feature-icon-wrapper {
-    width: 30px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-icon-wrapper svg {
-    width: 14px !important;
-    height: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
 }
 
 /*! End Feature Icon Wrapper Section */
 
 
-/* ================= SUCCESS STORIES ================= */
+/*! Start KKRF SS Section Bar */
 
 .kkrf-ss-section {
   background: #f8f8f8;
@@ -747,13 +724,12 @@
   color: #444;
 }
 
-
-
 /* ---------- CAROUSEL ---------- */
 .kkrf-ss-carousel {
   position: relative;
-  overflow: visible;   /* 👈 VERY IMPORTANT */
+  overflow: visible;
 }
+
 /* ---------- SLIDE ---------- */
 .kkrf-ss-slide {
   display: none;
@@ -762,7 +738,7 @@
   background: #fff;
   padding: 40px;
   border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
 .kkrf-ss-slide.active {
@@ -772,21 +748,17 @@
 
 .kkrf-ss-carousel {
   position: relative;
-  /* overflow: visible; */
 }
 
 .kkrf-ss-desktop-nav {
-  position: relative;          /* ❌ absolute hata diya */
-  margin-top: 24px;            /* card se gap */
-  
+  position: relative;
+  margin-top: 24px;
   display: flex;
-  justify-content: center;     /* ✅ center */
+  justify-content: center;
   align-items: center;
   gap: 16px;
-
   z-index: 10;
 }
-
 
 /* ---------- SLIDE BASE ---------- */
 .kkrf-ss-slide {
@@ -794,13 +766,12 @@
   inset: 0;
   opacity: 0;
   transform: translateX(40px);
-  transition: 
+  transition:
     opacity 0.6s ease,
     transform 0.6s ease;
   pointer-events: none;
 }
 
-/* visible slide */
 .kkrf-ss-slide.active {
   opacity: 1;
   transform: translateX(0);
@@ -808,33 +779,29 @@
   position: relative;
 }
 
-/* slide coming from right */
 .kkrf-ss-slide.enter-from-right {
   transform: translateX(60px);
 }
 
-/* slide coming from left */
 .kkrf-ss-slide.enter-from-left {
   transform: translateX(-60px);
 }
 
-/* slide exiting to left */
 .kkrf-ss-slide.exit-to-left {
   transform: translateX(-60px);
   opacity: 0;
 }
 
-/* slide exiting to right */
 .kkrf-ss-slide.exit-to-right {
   transform: translateX(60px);
   opacity: 0;
 }
 
-
 .kkrf-ss-slide {
   position: relative;
-  overflow: visible;   /* 👈 allows nav outside card */
+  overflow: visible;
 }
+
 /* ---------- LEFT ---------- */
 .kkrf-ss-left p {
   font-size: 15px;
@@ -857,7 +824,6 @@
   margin-bottom: 6px;
 }
 
-
 /* ---------- CTA ---------- */
 .kkrf-ss-cta {
   background: #000;
@@ -870,18 +836,14 @@
 }
 
 /* ---------- RIGHT ---------- */
-
-
 .kkrf-ss-right img {
   width: 100%;
-  max-width: 520px;          /* image zyada wide na ho */
-  max-height: 300px;         /* 🔥 HEIGHT CONTROL */
-  object-fit: cover;         /* crop kare, stretch nahi */
+  max-width: 520px;
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 14px;
 }
 
-
-/* ---------- NAV BUTTONS ---------- */
 /* ---------- NAV BUTTONS ---------- */
 .kkrf-ss-btn {
   width: 44px;
@@ -908,16 +870,14 @@
   border-color: #000;
 }
 
-
 /* ---------- ARROW EMOJI ---------- */
 .kkrf-ss-btn.prev::before {
-  content: "←";   /* left arrow */
+  content: "←";
 }
 
 .kkrf-ss-btn.next::before {
-  content: "→";   /* right arrow */
+  content: "→";
 }
-
 
 /* ---------- TABS ---------- */
 .kkrf-ss-tabs {
@@ -944,32 +904,105 @@
   border-bottom: 2px solid #000;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* Responsive */
 @media (max-width: 992px) {
+  .kkrf-ss-section {
+    padding: 60px 16px;
+  }
+
+  .kkrf-ss-heading {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .kkrf-ss-heading h2 {
+    font-size: 32px;
+  }
+
+  .kkrf-ss-heading p {
+    font-size: 15px;
+  }
+
   .kkrf-ss-slide {
     grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .kkrf-ss-right img {
+    max-width: 100%;
+    max-height: 260px;
   }
 }
 
+/* ---------- MOBILE ---------- */
 @media (max-width: 576px) {
+  .kkrf-ss-section {
+    padding: 48px 18px;
+  }
+
   .kkrf-ss-heading h2 {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .kkrf-ss-heading p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .kkrf-ss-slide {
-    padding: 24px;
+    padding: 20px;
+    border-radius: 14px;
+    gap: 20px;
+  }
+
+  .kkrf-ss-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .kkrf-ss-left li {
+    font-size: 13px;
+  }
+
+  .kkrf-ss-cta {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .kkrf-ss-right img {
+    max-height: 220px;
+    border-radius: 12px;
+  }
+
+  .kkrf-ss-desktop-nav {
+    margin-top: 18px;
+    gap: 12px;
+  }
+
+  .kkrf-ss-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .kkrf-ss-tabs ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .kkrf-ss-tabs li {
+    font-size: 13px;
   }
 }
 
+/*! End KKRF SS Section Bar */
 
-/* CARDS  */
 
-/* ===============================
-   APP DEVELOPMENT JOURNEY
-================================ */
-/* ===============================
-   APP DEVELOPMENT JOURNEY
-================================ */
+/*! Start KKRF Mobile Ad Journey Section */
 
 .kkrf-new-main-mobile-ad-journey-section {
   background: #050505;
@@ -1051,7 +1084,6 @@
   display: none;
 }
 
-/* ---------- CARD ---------- */
 .kkrf-new-main-mobile-ad-journey-card {
   min-width: 260px;
   height: 320px;
@@ -1068,15 +1100,13 @@
   transform-style: preserve-3d;
 }
 
-/* desktop hover flip */
+/* Desktop Hover Flip */
 @media (min-width: 769px) {
-  .kkrf-new-main-mobile-ad-journey-card:hover
-  .kkrf-new-main-mobile-ad-journey-card-inner {
+  .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
     transform: rotateY(180deg);
   }
 }
 
-/* ---------- FRONT (LIGHT) ---------- */
 .kkrf-new-main-mobile-ad-journey-card-front {
   background: #f8f8f8;
   border: 5px solid #000;
@@ -1084,15 +1114,13 @@
 }
 
 
-/* ---------- BACK (DARK) ---------- */
 .kkrf-new-main-mobile-ad-journey-card-back {
-  background:#000;
+  background: #000;
   border: 5px solid #222;
   color: #f8f8f8;
   transform: rotateY(180deg);
 }
 
-/* ---------- FRONT & BACK COMMON ---------- */
 .kkrf-new-main-mobile-ad-journey-card-front,
 .kkrf-new-main-mobile-ad-journey-card-back {
   position: absolute;
@@ -1107,28 +1135,35 @@
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* ---------- ICON ---------- */
 .journey-card-icon {
   width: 26px;
   height: 26px;
-  /* justify-content: center; */
   justify-items: center;
   margin-bottom: 18px;
 }
 
-/* icon color switch */
+.kkrf-new-main-mobile-ad-journey-card-front i {
+  width: 26px;
+  font-size: 24px;
+  justify-items: center;
+  margin-bottom: 18px;
+}
+
+.kkrf-new-main-mobile-ad-journey-card-back i {
+  width: 26px;
+  font-size: 24px;
+  justify-items: center;
+  margin-bottom: 18px;
+}
+
 .kkrf-new-main-mobile-ad-journey-card-back .journey-card-icon {
   filter: brightness(0) invert(1);
 }
 
-
-/* FRONT → make icon BLACK */
 .kkrf-new-main-mobile-ad-journey-card-front .journey-card-icon {
   filter: brightness(0);
 }
 
-
-/* ---------- TEXT ---------- */
 .kkrf-new-main-mobile-ad-journey-card h3 {
   font-size: 18px;
   font-weight: 600;
@@ -1151,59 +1186,61 @@
   line-height: 1.6;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
-
-/* Tablet */
+/* Responsive */
 @media (max-width: 1024px) {
+
   .kkrf-new-main-mobile-ad-journey-title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .kkrf-new-main-mobile-ad-journey-description {
+    font-size: 15px;
   }
 
   .kkrf-new-main-mobile-ad-journey-card {
-    min-width: 280px;
+    min-width: 300px;
     height: 340px;
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
+
   .kkrf-new-main-mobile-ad-journey-section {
-    padding: 60px 0;
+    padding: 52px 0;
   }
 
   .kkrf-new-main-mobile-ad-journey-navigation {
     position: static;
     justify-content: flex-end;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
-  .kkrf-new-main-mobile-ad-journey-title {
-    font-size: 22px;
-  }
-
-  .kkrf-new-main-mobile-ad-journey-description {
-    font-size: 14px;
+  .kkrf-new-main-mobile-ad-journey-cards {
+    display: flex;
+    gap: 14px;
+    padding: 0 10px 14px;
+    scroll-snap-type: x mandatory;
   }
 
   .kkrf-new-main-mobile-ad-journey-card {
-    min-width: 85%;
-    height: 320px;
+    flex: 0 0 260px;
+    max-width: 260px;
+    height: 300px;
+    scroll-snap-align: center;
+    margin-top: 0;
   }
 
-  /* tap flip */
-  .kkrf-new-main-mobile-ad-journey-card.is-flipped
-  .kkrf-new-main-mobile-ad-journey-card-inner {
+  .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
+    transform: none;
+  }
+
+  .kkrf-new-main-mobile-ad-journey-card.is-flipped .kkrf-new-main-mobile-ad-journey-card-inner {
     transform: rotateY(180deg);
   }
-}
 
-/* Small Mobile */
-@media (max-width: 480px) {
-  .journey-card-icon {
-    width: 40px;
-    height: 40px;
+  .kkrf-new-main-mobile-ad-journey-card-front,
+  .kkrf-new-main-mobile-ad-journey-card-back {
+    padding: 20px;
   }
 
   .kkrf-new-main-mobile-ad-journey-card h3 {
@@ -1212,5 +1249,113 @@
 
   .kkrf-new-main-mobile-ad-journey-card p {
     font-size: 13px;
+    line-height: 1.55;
   }
 }
+
+@media (max-width: 480px) {
+  .kkrf-new-main-mobile-ad-journey-card {
+    flex: 0 0 200px;
+    max-width: 200px;
+    height: 280px;
+  }
+}
+
+/*! End KKRF Mobile Ad Journey Section */
+
+
+/*! Start NFT Metaverse Section Bar */
+
+.nft-metaverse-section {
+  color: #000;
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.nft-metaverse-container {
+  gap: 60px;
+  display: grid;
+  margin: 0 auto;
+  padding: 0 2px;
+  max-width: 1280px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nft-metaverse-text h2 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.nft-metaverse-text .intro {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #000000bd;
+  margin-bottom: 16px;
+}
+
+.nft-metaverse-media {
+  height: 102%;
+  display: flex;
+}
+
+.nft-metaverse-media video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nft-metaverse-container {
+    gap: 10px;
+    margin: 0 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .nft-metaverse-media video {
+    display: none;
+  }
+
+  .nft-metaverse-text {
+    text-align: left;
+  }
+
+  .nft-metaverse-text h2 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .nft-metaverse-text .intro {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nft-metaverse-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .nft-metaverse-text .intro {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nft-metaverse-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nft-metaverse-text .intro {
+    font-size: 16px;
+  }
+}
+
+/*! End NFT Metaverse Section Bar */
