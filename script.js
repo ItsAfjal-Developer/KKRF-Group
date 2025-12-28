@@ -777,6 +777,3 @@ epScheduleBtn.addEventListener("click", function () {
     alert("Your consultation request has been submitted!");
     hideExitPopup();
 });
-
-//GSAP
-
