@@ -1989,7 +1989,7 @@ textarea {
     background: rgba(159, 240, 208, 0.25);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 1024px) {
     .kkrf-blog-title {
         font-size: 32px;

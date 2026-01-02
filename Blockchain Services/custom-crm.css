@@ -1,139 +1,3 @@
-/*! Start Pop Up Section Bar */
-
-body.popup-open {
-    overflow: hidden;
-}
-
-.popup-content {
-    margin-top: 40px;
-}
-
-.popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 100000;
-}
-
-/*! End Pop Up Section Bar */
-
-
-/*! Start Select Language Button only Responsive */
-
-@media (max-width: 768px) {
-
-  .mobile-lang {
-    display: block;
-    position: relative;
-    margin-top: 12px;
-  }
-
-   .lang-btn {
-    width: 100%;
-    min-width: 160px;         
-    padding: 10px 14px;
-    font-size: 14px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    text-align: left;
-    white-space: nowrap;     
-  }
-
-  .lang-dropdown {
-    position: absolute;
-    top: 110%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    list-style: none;
-    padding: 6px 0;
-    margin: 0;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    display: none;
-    z-index: 9999;
-  }
-
-  .lang-dropdown li {
-    padding: 10px 14px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #000 !important;
-    background: #fff;
-  }
-
-  .lang-dropdown li:hover {
-    background: #f2f2f2;
-  }
-}
-
-/*! End Select Language Button only Responsive */
-
-/*! Start the Android Form Group Selection */
-
-.android-form-group select {
-  background-color: #000;
-  color: #fff !important;          
-  border: 1px solid #555;
-  appearance: none;               
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.android-form-group select option {
-  background-color: #000;
-  color: #fff;             
-}
-
-.android-form-group select option[value=""] {
-  color: #aaa;             
-}
-
-.android-form-group select {
-  background-color: #000;
-  color: #fff !important;         
-  border: 1px solid #555;
-  appearance: none;                
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-@media (max-width: 768px) {
-  .android-form-group select {
-    background-color: #fff !important;
-    color: #000 !important;
-  }
-
-  .android-form-group select option {
-    background-color: #fff !important;
-    color: #000 !important;
-  }
-}
-
-/*! End the Android Form Group Selection */
-
-
-/*! Start the Android Form Group Career Link */
-
-.career-link {
-  color: #f8f8f8;      
-  text-decoration: none;
-}
-
-.career-link:hover {
-  color: darkgrey;
-}
-
-/*! Start the Android Form Group Career Link */
-
-
 /*! Start Hero Section Bar */
 
 .hero {
@@ -718,3 +582,138 @@ textarea {
 }
 
 /*! End MV Insights Section Bar */
+
+/*! Start Pop Up Section Bar */
+
+body.popup-open {
+    overflow: hidden;
+}
+
+.popup-content {
+    margin-top: 40px;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100000;
+}
+
+/*! End Pop Up Section Bar */
+
+
+/*! Start Select Language Button only Responsive */
+
+@media (max-width: 768px) {
+
+    .mobile-lang {
+        display: block;
+        position: relative;
+        margin-top: 12px;
+    }
+
+    .lang-btn {
+        width: 100%;
+        min-width: 160px;
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .lang-dropdown {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        list-style: none;
+        padding: 6px 0;
+        margin: 0;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        display: none;
+        z-index: 9999;
+    }
+
+    .lang-dropdown li {
+        padding: 10px 14px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #000 !important;
+        background: #fff;
+    }
+
+    .lang-dropdown li:hover {
+        background: #f2f2f2;
+    }
+}
+
+/*! End Select Language Button only Responsive */
+
+/*! Start the Android Form Group Selection */
+
+.android-form-group select {
+    background-color: #000;
+    color: #fff !important;
+    border: 1px solid #555;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.android-form-group select option {
+    background-color: #000;
+    color: #fff;
+}
+
+.android-form-group select option[value=""] {
+    color: #aaa;
+}
+
+.android-form-group select {
+    background-color: #000;
+    color: #fff !important;
+    border: 1px solid #555;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media (max-width: 768px) {
+    .android-form-group select {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    .android-form-group select option {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+}
+
+/*! End the Android Form Group Selection */
+
+
+/*! Start the Android Form Group Career Link */
+
+.career-link {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.career-link:hover {
+    color: darkgrey;
+}
+
+/*! End the Android Form Group Career Link */

@@ -288,7 +288,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-
     .hero-mobile-video-wrapper {
         position: relative;
         top: auto;
@@ -430,7 +429,7 @@ textarea {
         line-height: 1.3;
     }
 
-   .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }
@@ -441,7 +440,7 @@ textarea {
         padding-right: 24px;
     }
 
-    .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }
@@ -452,7 +451,7 @@ textarea {
         padding-right: 16px;
     }
 
-    .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }

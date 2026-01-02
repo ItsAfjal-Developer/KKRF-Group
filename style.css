@@ -5301,6 +5301,238 @@ textarea {
 
 /*! End Bi Wrapper Section Bar */
 
+
+/*! Start KKRF Blog Section Bar */
+
+.kkrf-blog-section {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 36px 0;
+    color: #0a0a0a;
+}
+
+.kkrf-blog-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* ================= HEADER ================= */
+.kkrf-blog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.kkrf-blog-title {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.kkrf-blog-view-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.kkrf-blog-view-link:hover {
+    color: darkgray;
+    transform: translateX(4px);
+}
+
+.kkrf-blog-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 600;
+    max-width: 920px;
+    margin-bottom: 48px;
+}
+
+/* ================= SWIPER ================= */
+.kkrf-blog-swiper {
+    position: relative;
+    padding-bottom: 56px;
+    overflow: visible;
+}
+
+.kkrf-blog-swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.kkrf-blog-swiper .swiper-slide {
+    width: 320px;
+    height: auto;
+}
+
+/* ================= CARD ================= */
+.kkrf-blog-card {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #0b0e0f;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.45s ease;
+}
+
+.kkrf-blog-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ================= IMAGE ================= */
+.kkrf-blog-image {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kkrf-blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.kkrf-blog-card:hover .kkrf-blog-image img {
+    transform: scale(1.08);
+}
+
+/* ================= TOP LABEL ================= */
+.kkrf-blog-top-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+/* ================= OVERLAY ================= */
+.kkrf-blog-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.25) 35%,
+            rgba(0, 0, 0, 0) 55%),
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0) 65%);
+}
+
+/* ================= CONTENT ================= */
+.kkrf-blog-content {
+    position: absolute;
+    bottom: 0;
+    inset-inline: 0;
+    z-index: 4;
+    padding: 20px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================= TAGS ================= */
+.kkrf-blog-tag {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #9ff0d0;
+    background: rgba(159, 240, 208, 0.18);
+}
+
+.kkrf-blog-tag-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* ================= TITLE ================= */
+.kkrf-blog-card-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #f8f8f8;
+}
+
+/* ================= SWIPER NAV (FINAL FIXED) ================= */
+.kkrf-blog-swiper .swiper-button-prev,
+.kkrf-blog-swiper .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(15, 20, 20, 0.75);
+    color: #ffffff;
+    backdrop-filter: blur(6px);
+    z-index: 999;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.kkrf-blog-swiper .swiper-button-prev:hover,
+.kkrf-blog-swiper .swiper-button-next:hover {
+    transform: scale(1.08);
+    background: rgba(159, 240, 208, 0.25);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+    .kkrf-blog-title {
+        font-size: 32px;
+    }
+
+    .kkrf-blog-image {
+        height: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kkrf-blog-container {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .kkrf-blog-section {
+        padding: 72px 0 48px;
+    }
+
+    .kkrf-blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .kkrf-blog-title {
+        font-size: 32px;
+    }
+
+    .kkrf-blog-image {
+        height: 300px;
+    }
+
+    .kkrf-blog-card-title {
+        font-size: 16px;
+    }
+}
+
+/*! End KKRF Blog Section Bar */
+
 /*! Start Site Footer Section Bar  */
 
 html,
@@ -5544,7 +5776,7 @@ body {
 
     /* ---------- KKRF WATERMARK (CENTERED + SMALL) ---------- */
     .site-footer::before {
-       display: none;
+        display: none;
     }
 
     /* ---------- CONTENT ---------- */

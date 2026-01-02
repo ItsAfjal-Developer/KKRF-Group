@@ -15,7 +15,7 @@
             rgba(0, 0, 0, 0.65) 0%,
             rgba(0, 0, 0, 0.55) 40%,
             rgba(0, 0, 0, 0.75) 100%),
-        url("http://kkrfgroup.com/wp-content/uploads/2025/12/dapp-development-banner.png");
+        url("http://kkrfgroup.com/wp-content/uploads/2026/01/business-intelligence-banner-scaled.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ textarea {
 
 /* VIDEO */
 .nft-metaverse-media {
-    height: 132%;
+    height: 126%;
     display: flex;
 }
 
@@ -430,7 +430,7 @@ textarea {
         line-height: 1.3;
     }
 
-   .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }
@@ -441,7 +441,7 @@ textarea {
         padding-right: 24px;
     }
 
-    .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }
@@ -452,7 +452,7 @@ textarea {
         padding-right: 16px;
     }
 
-    .nft-metaverse-text .intro{
+    .nft-metaverse-text .intro {
         font-size: 16px;
     }
 }

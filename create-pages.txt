@@ -51,22 +51,21 @@ Symbols - { & -> &amp; }
 </a>
 
 <div class="mobile-lang">
-                            <button type="button" class="lang-btn">
-                                Select Language
-                            </button>
+ <button type="button" class="lang-btn">
+     Select Language
+ </button>
 
-                            <ul class="lang-dropdown">
-                                <li data-lang="en">English</li>
-                                <li data-lang="hi">Hindi</li>
-                                <li data-lang="fr">Francais</li>
-                            </ul>
-                        </div>
+ <ul class="lang-dropdown">
+     <li data-lang="en">English</li>
+     <li data-lang="hi">Hindi</li>
+     <li data-lang="fr">Francais</li>
+ </ul>
+</div>
 
 
-                        <li>
-                            <button class="mobile-nav-link has-children"
-                                data-target="mp">
-                                Custom App Development
-                                <span class="chevron">›</span>
-                            </button>
-                        </li>
+<li>
+ <button class="mobile-nav-link has-children" data-target="mp">
+     Custom App Development
+     <span class="chevron">›</span>
+ </button>
+</li>

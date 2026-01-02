@@ -15,7 +15,7 @@
             rgba(0, 0, 0, 0.65) 0%,
             rgba(0, 0, 0, 0.55) 40%,
             rgba(0, 0, 0, 0.75) 100%),
-        url("http://kkrfgroup.com/wp-content/uploads/2026/01/managed-it-banner-scaled.jpg");
+        url("http://kkrfgroup.com/wp-content/uploads/2026/01/contact-us-page-scaled.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,26 +329,107 @@ textarea {
 /*! End Hero Section Bar */
 
 
-/*! Start Feature Icon Wrapper Bar */
+/*! Start NFT Metaverse Section Bar */
 
-.intro-text {
+.nft-metaverse-section {
     color: #000;
-    font-size: 16px;
+    padding: 60px 0;
+    background: #f2f2f2;
+}
+
+.nft-metaverse-container {
+    gap: 60px;
+    display: grid;
+    margin: 0 auto;
+    padding-left: 2px;
+    padding-right: 0;
+    max-width: 1280px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* TEXT */
+.nft-metaverse-text h2 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.nft-metaverse-text .intro {
+    font-size: 17px;
     font-weight: 600;
     line-height: 1.7;
+    color: #000000bd;
+    margin-bottom: 16px;
 }
 
-.feature-icon-wrapper {
-    width: 30px;
-    height: 50px;
+
+/* VIDEO */
+.nft-metaverse-media {
+    height: 135%;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.feature-icon-wrapper svg {
-    width: 14px !important;
-    height: 14px !important;
+.nft-metaverse-media video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
 
-/*! End Feature Icon Wrapper Bar */
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .nft-metaverse-container {
+        gap: 10px;
+        margin: 0 18px;
+        grid-template-columns: 1fr;
+    }
+
+    .nft-metaverse-media video {
+        display: none;
+    }
+
+    .nft-metaverse-text {
+        text-align: left;
+    }
+
+    .nft-metaverse-text h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .nft-metaverse-text .intro {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nft-metaverse-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .nft-metaverse-text .intro {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nft-metaverse-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .nft-metaverse-text .intro {
+        font-size: 16px;
+    }
+}
+
+/*! End NFT Metaverse Section Bar */
