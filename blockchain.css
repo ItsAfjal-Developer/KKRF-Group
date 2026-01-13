@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
 /*! Start Hero Section Bar */
 
 /* HERO */
@@ -40,7 +52,7 @@
 .hero-content {
     gap: 90px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
 }
@@ -51,7 +63,7 @@
     flex: 1;
     max-width: 480px;
     padding-top: 80px;
-    margin-right: 200px;
+    margin-right: 0;
 }
 
 .hero-text h1 {
@@ -361,6 +373,11 @@ textarea {
     padding: 48px 20px;
     background: #f8f8f8;
     box-sizing: border-box;
+}
+
+/* ❌ REMOVE / OVERRIDE THIS */
+.partner-section {
+    overflow: visible !important;
 }
 
 .partner-inner {
@@ -693,3 +710,55 @@ textarea {
 }
 
 /*! End Product Feature Section Bar */
+
+@media (max-width: 768px) {
+    .blockchain-wrapper,
+    .container,
+    .section {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  /* Hero / main section full width */
+  .hero,
+  .blockchain-hero,
+  .hero-section {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Container ko full-width allow karo */
+  .container,
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+.container {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}   
+
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

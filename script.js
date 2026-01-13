@@ -748,11 +748,13 @@ function hideExitPopup() {
 epCloseBtn.addEventListener("click", hideExitPopup);
 
 // ------------------------------ CLOSE POPUP WHEN CLICKING OUTSIDE POPUP ------------------------------ //
-epOverlay.addEventListener("click", function (event) {
+if (epOverlay) {
+  epOverlay.addEventListener("click", function (event) {
     if (event.target === epOverlay) {
-        hideExitPopup();
+      hideExitPopup();
     }
-});
+  });
+}
 
 // ------------------------------ CLOSE POPUP ON ESC KEY PRESS ------------------------------ //
 document.addEventListener("keydown", function (e) {
@@ -773,7 +775,9 @@ document.addEventListener("mouseout", function (event) {
 });
 
 // ------------------------------ FORM BUTTON → KEEP POPUP OPEN OR HANDLE SUBMISSION ------------------------------ //
-epScheduleBtn.addEventListener("click", function () {
+if (epScheduleBtn) {
+  epScheduleBtn.addEventListener("click", function () {
     alert("Your consultation request has been submitted!");
     hideExitPopup();
-});
+  });
+}

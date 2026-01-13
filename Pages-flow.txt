@@ -1,0 +1,111 @@
+On 09 Jan -> All Services
+
+Artificial-Intelligence-Service
+
+1. ai-strategy-consulting.html
+   ai-strategy-consulting.css
+2. chatbot-development.html
+   chatbot-development.css
+3. machine-learning.html
+   machine-learning.css   
+
+
+Blockchain-Services
+
+1. custom-crm.html
+   custom-crm.css
+2. dapp-development.html
+   dapp-development.css
+3. meta-verse.html
+   meta-verse.css
+4. nft-marketplace.html
+   nft-marketplace.css         
+
+Cloud-Services
+
+1. aws-services.html
+   aws-services.css
+2. cloud-consulting.html
+   cloud-consulting.css
+3. cloud-managed.html
+   cloud-managed.css
+
+Data-Analytics-Services
+
+1. business-intelligence.html
+   business-intelligence.css
+2. data-engineering.html
+   data-engineering.css
+3. predictive-analytics.html
+   predictive-analytics.css
+
+Devops-Services
+
+1. ci-cd-pipelines.html
+   ci-cd-pipelines.css
+2. infrastructure-as-code.html
+   infrastructure-as-code.css
+3. monitoring-and-logging.html
+   monitoring-and-logging.css   
+
+IT-Consulting-Service
+
+1. healthcare-it-consulting.html
+   healthcare-it-consulting.css
+2. it-outsourcing-services.html
+   it-outsourcing-services.css
+3. managed-it-services.html
+   managed-it-services.css   
+
+Mobile-App-Development-Sections
+
+1. android-app-development.html
+   android-app-development.css
+2. iosdevelopment.html
+   iosdevelopment.css
+3. mobile-app-development.html
+   mobile-app-development.css
+
+
+On 12 Jan
+
+Software-Development-Services
+
+1. ar-vr-development.html
+   ar-vr-development.css
+2. erp-software-development.html
+   erp-software-development.css
+3. iot-development.html
+   iot-development.css
+4. microservices.html
+   microservices.css          
+
+Industries-Sections
+
+1. energy-utilities.html
+   energy-utilities.css
+2. financial-services-insurance.html
+   financial-services-insurance.css
+3. heathcare-and-life.html
+   heathcare-and-life.css
+4. industrial.html
+   industrial.css
+5. media-and-entertainment.html
+   media-and-entertainment.css
+6. retail-and-cpg.html
+   retail-and-cpg.css
+7. technology.html
+   technology.css
+8. telecommunication.html
+   telecommunication.css
+9. transportation-and-mobility.html
+   transportation-and-mobility.css
+
+Other Sections
+
+1. Careers-and-culture.html
+   Careers-and-culture.css
+2. Contact-us.html
+   Contact-us.css
+3. Blockchain-in-Austin.html
+   Blockchain-in-Austin.css      

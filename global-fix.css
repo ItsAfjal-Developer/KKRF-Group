@@ -1,0 +1,110 @@
+/* ================= GLOBAL STABILITY FIX ================= */
+
+/* Prevent reload flash */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: #000;
+}
+
+/* Prevent layout jump */
+* {
+  box-sizing: border-box;
+}
+
+/* Container safety */
+.container {
+  width: 100%;
+  max-width: 1290px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+/* Tablet fix */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+}
+
+/* Sections stability */
+section,
+header,
+footer {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent card flash */
+.feature-box,
+.partner-section,
+.trusted-section {
+  will-change: transform, opacity;
+}
+
+/* Mobile menu default hidden */
+/* nav.mobile-nav {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+nav.mobile-nav.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+} */
+
+/* Footer flash fix */
+footer {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ===== FORCE STABLE CARD WIDTH ===== */
+
+.partner-section,
+.features-container,
+.feature-list {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Force cards to take full width immediately */
+.feature-box {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: none !important;
+}
+
+/* Mobile specific hard fix */
+@media (max-width: 768px) {
+  .partner-inner {
+    display: block;
+  }
+
+  .feature-list {
+    display: block;
+  }
+
+  .feature-box {
+    margin-bottom: 16px;
+  }
+}

@@ -204,12 +204,28 @@ body {
     background-color: #fff !important;
     opacity: 1 !important;
 
-    -webkit-text-fill-color: #000 !important;
+    /* -webkit-text-fill-color: #000 !important; */
 }
 
 .popup-right textarea {
     min-height: 90px;
     resize: none;
+}
+
+.popup-right textarea {
+    color: #000 !important;
+    caret-color: #000;
+}
+
+/* Selection fix */
+.popup-right textarea::selection {
+    background: #2563eb;
+    color: #fff !important;
+}
+
+.popup-right textarea::-moz-selection {
+    background: #2563eb;
+    color: #fff !important;
 }
 
 /* Placeholder text */

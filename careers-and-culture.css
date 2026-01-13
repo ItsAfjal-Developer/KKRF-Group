@@ -1,19 +1,25 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
 /*! Start KKRF Main New Career Page Apply Section */
 
 /* ================= SECTION ================= */
 .kkrf-main-new-career-page-apply-section {
-  background: #f5f5f5;
-  padding: 70px 30px;
-  font-family: Inter, sans-serif;
   color: #2b2b2b;
+  padding: 70px 30px;
+  background: #f5f5f5;
+  font-family: Inter, sans-serif;
 }
 
 /* ================= CONTAINER ================= */
 .kkrf-main-new-career-page-apply-container {
-  max-width: 1290px;
-  margin: 0 auto;
-  display: flex;
   gap: 60px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1290px;
   align-items: flex-start;
 }
 
@@ -23,33 +29,33 @@
 }
 
 .kkrf-main-new-career-page-apply-form-wrapper h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 28px;
   color: #000;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding-bottom: 6px;
+  margin-bottom: 28px;
   display: inline-block;
   border-bottom: 2px solid #000;
-  padding-bottom: 6px;
 }
 
 /* ================= FORM ================= */
 .kkrf-main-new-career-page-apply-form {
+  gap: 26px;
   display: flex;
   flex-direction: column;
-  gap: 26px;
 }
 
 /* ================= INPUTS ================= */
 .kkrf-main-new-career-page-apply-form input,
 .kkrf-main-new-career-page-apply-form select {
   width: 100%;
-  padding: 10px 4px;
   border: none;
-  border-bottom: 1px solid #6f6f6f;
-  font-size: 0.95rem;
   outline: none;
-  background: transparent;
   color: #2b2b2b;
+  padding: 10px 4px;
+  font-size: 0.95rem;
+  background: transparent;
+  border-bottom: 1px solid #6f6f6f;
 }
 
 .kkrf-main-new-career-page-apply-form input::placeholder {
@@ -65,55 +71,55 @@
 .kkrf-main-new-career-page-apply-form select {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333333'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 22px;
   cursor: pointer;
   padding-right: 36px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
 }
 
 /* ================= FILE UPLOAD ================= */
 .kkrf-main-new-career-page-apply-upload {
-  background: #e5e5e5;
   padding: 20px;
-  text-align: center;
   cursor: pointer;
   font-size: 0.95rem;
   position: relative;
+  text-align: center;
+  background: #e5e5e5;
   border: 1px dashed #9a9a9a;
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .kkrf-main-new-career-page-apply-upload:hover {
-  background: #dedede;
   border-color: #000;
+  background: #dedede;
 }
 
 .kkrf-main-new-career-page-apply-upload input[type="file"] {
-  position: absolute;
   inset: 0;
   opacity: 0;
   cursor: pointer;
+  position: absolute;
 }
 
 .kkrf-main-new-career-page-apply-upload .upload-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 10px;
   color: #444;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .kkrf-main-new-career-page-apply-upload .material-symbols-outlined {
-  font-size: 2rem;
   color: #444;
+  font-size: 2rem;
 }
 
 /* ================= INFO TEXT ================= */
 .kkrf-main-new-career-page-apply-info {
-  font-size: 0.9rem;
   color: #444;
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .kkrf-main-new-career-page-apply-info a {
@@ -124,16 +130,16 @@
 
 /* ================= BUTTON ================= */
 .kkrf-main-new-career-page-apply-submit {
+  border: none;
+  cursor: pointer;
+  color: #f8f8f8;
+  font-weight: 600;
   margin-top: 12px;
   background: #000;
-  color: #fff;
   padding: 14px 26px;
   font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
   width: fit-content;
   border-radius: 8px;
-  border: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -151,8 +157,8 @@
 
 .kkrf-main-new-career-page-apply-image img {
   max-width: 100%;
-  border-radius: 14px;
   object-fit: cover;
+  border-radius: 14px;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -178,10 +184,10 @@
 /*! Start KKRF Group | Career & Culture Hero Section */
 
 .kkrf-career-culture-hero {
-  position: relative;
   width: 100%;
-  min-height: 82vh;
   height: auto;
+  min-height: 82vh;
+  position: relative;
 
   overflow: hidden;
   font-family: "Arial", sans-serif;
@@ -192,7 +198,7 @@
   animation: kkrfCareerHeroSlideshow 14s infinite ease-in-out;
 }
 
-/* ===== Background Slideshow ===== */
+/* ===== BACKGROUND SLIDESHOW ===== */
 @keyframes kkrfCareerHeroSlideshow {
   0% {
     background-image: url("http://kkrfgroup.com/wp-content/uploads/2025/12/agile-erp-software-scaled.jpg");
@@ -215,14 +221,12 @@
   }
 }
 
-/* Overlay */
-
+/* OVERLAY */
 .kkrf-career-culture-overlay {
-  position: absolute;
   inset: 0;
   z-index: 2;
-
   display: flex;
+  position: absolute;
   align-items: center;
 
   background: linear-gradient(90deg,
@@ -233,13 +237,12 @@
 
 .kkrf-career-culture-container {
   width: 100%;
-  max-width: 1290px;
   margin: 0 auto;
   padding: 0 4px;
+  max-width: 1290px;
 }
 
-/* Content */
-
+/* CONTENT */
 .kkrf-career-culture-content {
   max-width: 650px;
   color: #ffffff;
@@ -258,21 +261,20 @@
   }
 }
 
-/* Tagline */
+/* TAGLINE */
 .kkrf-career-culture-tagline {
-  display: inline-block;
+  color: #cfcfcf;
   font-size: 0.85rem;
+  margin-bottom: 14px;
+  display: inline-block;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #cfcfcf;
-  margin-bottom: 14px;
 }
 
-/* Title */
 .kkrf-career-culture-title {
-  font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.2;
+  font-size: 3.2rem;
   margin-bottom: 20px;
 
   background: linear-gradient(90deg, #ffffff 0%, #bdbdbd 80%);
@@ -280,7 +282,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Description */
 .kkrf-career-culture-description {
   font-size: 1.1rem;
   line-height: 1.65;
@@ -288,55 +289,51 @@
   margin-bottom: 32px;
 }
 
-/* Buttons */
-
 .kkrf-career-culture-actions {
-  display: flex;
   gap: 16px;
+  display: flex;
   flex-wrap: wrap;
 }
 
 .kkrf-career-culture-btn {
-  padding: 12px 30px;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 8px;
+  padding: 12px 30px;
   text-decoration: none;
   transition: all 0.35s ease;
 }
 
-/* Primary */
+/* PRIMARY */
 .kkrf-career-culture-btn.primary-btn {
-  background: #ffffff;
   color: #000;
+  background: #ffffff;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .kkrf-career-culture-btn.primary-btn:hover {
-  transform: translateY(-4px);
   background: #f1f1f1;
+  transform: translateY(-4px);
 }
 
-/* Secondary */
+/* SECONDARY */
 .kkrf-career-culture-btn.secondary-btn {
-  border: 1px solid #ffffff;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .kkrf-career-culture-btn.secondary-btn:hover {
-  background: #ffffff;
   color: #000;
+  background: #ffffff;
   transform: translateY(-4px);
 }
 
-/* Mobile Slideshow */
-
+/* MOBILE SLIDESHOW */
 .kkrf-career-culture-mobile-slider {
   display: none;
 }
 
-/* Responsive */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .kkrf-career-culture-title {
     font-size: 2.4rem;
@@ -370,14 +367,14 @@
   }
 
   .kkrf-career-culture-description {
-    font-size: 0.75rem;
     margin: 0 34px;
+    font-size: 0.75rem;
     margin-bottom: 30px;
   }
 
   .kkrf-career-culture-actions {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .kkrf-career-culture-btn {
@@ -387,11 +384,10 @@
     text-align: center;
   }
 
-  /* Mobile slideshow */
   .kkrf-career-culture-mobile-slider {
-    display: block;
     width: 100%;
     height: 40vh;
+    display: block;
   }
 
   .kkrf-career-culture-mobile-slide {
@@ -416,26 +412,23 @@
 
 .kkrf-career-why-section {
   width: 100%;
-  padding: 100px 0;
-  background: #000;
   color: #fff;
   overflow: hidden;
+  padding: 100px 0;
+  background: #000;
   font-family: "Arial", sans-serif;
 }
 
-/* ===== Container (1290px) ===== */
 .kkrf-career-why-container {
-  max-width: 1290px;
+  gap: 60px;
+  display: grid;
   margin: 0 auto;
   padding: 0 4px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 1290px;
   align-items: center;
-  gap: 60px;
+  grid-template-columns: 1fr 1fr;
 }
 
-/* ===== Content ===== */
 .kkrf-career-why-title {
   font-size: 2.6rem;
   margin-bottom: 20px;
@@ -445,13 +438,12 @@
 }
 
 .kkrf-career-why-text {
-  font-size: 1.05rem;
   line-height: 1.7;
   color: #d0d0d0;
+  font-size: 1.05rem;
   margin-bottom: 18px;
 }
 
-/* ===== Image ===== */
 .kkrf-career-why-image {
   display: flex;
   justify-content: flex-end;
@@ -470,8 +462,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* Scroll Animations */
-
+/* SCROLL ANIMATIONS */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
@@ -489,19 +480,18 @@
   transform: translate(0, 0);
 }
 
-/* Responsive */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .kkrf-career-why-container {
-    grid-template-columns: 1fr;
-    text-align: center;
     margin: 0 16px;
+    text-align: center;
+    grid-template-columns: 1fr;
   }
 
   .kkrf-career-why-image {
     display: flex;
-    justify-content: center;
     margin-bottom: 40px;
+    justify-content: center;
   }
 
   .kkrf-career-why-title {
@@ -511,7 +501,6 @@
 
   .kkrf-career-why-text {
     font-size: 0.95rem;
-    text-align: left;
   }
 }
 
@@ -537,20 +526,18 @@
 /*! Start Trending Opportunities – Career Page Section Bar */
 
 .kkrf-career-trending-section {
-  background: #f8f8f8;
   padding: 38px 0;
+  color: #000000;
+  background: #f8f8f8;
   font-family: Arial, sans-serif;
-  color: #000;
 }
 
-/* ================= Container ================= */
 .kkrf-career-trending-container {
-  max-width: 1290px;
   margin: 0 auto;
   padding: 0 4px;
+  max-width: 1290px;
 }
 
-/* ================= Header ================= */
 .kkrf-career-trending-header {
   text-align: center;
   max-width: 1000px;
@@ -575,12 +562,12 @@
 /*! Start KKRF Career Trending Filters (Slide Up Animation) */
 
 .kkrf-career-trending-filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 18px;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 40px auto 60px;
+  justify-content: center;
 
   opacity: 0;
   transform: translateY(60px);
@@ -592,21 +579,20 @@
   transform: translateY(0);
 }
 
-/* ================= Search Box ================= */
 .kkrf-career-search-box {
-  position: relative;
   width: 240px;
+  position: relative;
 }
 
 .kkrf-career-search-box input {
   width: 100%;
   height: 52px;
-  padding: 0 44px 0 16px;
-  border-radius: 10px;
-  border: 1px solid #bdbdbd;
+  color: #000000;
   background: #fff;
-  color: #000;
   font-size: 0.95rem;
+  border-radius: 10px;
+  padding: 0 44px 0 16px;
+  border: 1px solid #bdbdbd;
 }
 
 .kkrf-career-search-box input::placeholder {
@@ -614,60 +600,60 @@
 }
 
 .kkrf-career-search-box i {
-  position: absolute;
-  right: 14px;
   top: 50%;
-  transform: translateY(-50%);
+  right: 14px;
   color: #000;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
-/* ================= Select Boxes ================= */
 .kkrf-career-selects {
-  display: flex;
   gap: 18px;
+  display: flex;
 }
 
-/* Select field */
 .kkrf-career-selects select {
   width: 220px;
   height: 52px;
-  padding: 0 16px;
-  border-radius: 10px;
-  border: 1px solid #bdbdbd;
-  background-color: #fff;
   color: #000;
-  font-size: 0.95rem;
+  padding: 0 16px;
   cursor: pointer;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
 
-  /* Remove Native Styles */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
   background-image: url("data:image/svg+xml,%3Csvg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: right 14px center;
-  background-size: 18px;
 }
 
-/* Options text color */
 .kkrf-career-selects select option {
   color: #000;
   background-color: #fff;
 }
 
-/* Hover & selected option (Firefox support) */
 .kkrf-career-selects select option:hover,
 .kkrf-career-selects select option:checked {
-  background-color: #e6e6e6;
   color: #000;
+  background-color: #e6e6e6;
 }
 
-/* Focus – remove blue glow */
 .kkrf-career-selects select:focus {
   outline: none;
   border-color: #000;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+.kkrf-career-search-box,
+.kkrf-career-selects,
+.kkrf-career-selects select {
+  max-width: 100%;
 }
 
 /*! Left KKRF Career Trending Filters (Slide Up Animation) */
@@ -676,15 +662,15 @@
 /*! Start Job Cards (Fade + Lift) Section Bar */
 
 .kkrf-career-job-grid {
+  gap: 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
 }
 
 .kkrf-career-job-card {
-  background: #e9e9e9;
-  border-radius: 14px;
   overflow: hidden;
+  border-radius: 14px;
+  background: #e9e9e9;
   border: 1px solid #d0d0d0;
 
   opacity: 0;
@@ -697,37 +683,35 @@
   transform: translateY(0);
 }
 
-/* Top strip */
 .kkrf-career-job-card::before {
-  content: "Latest Opening";
   display: block;
+  font-weight: 600;
+  color: #f8f8f8;
   padding: 10px 16px;
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #fff;
+  content: "Latest Opening";
   background: linear-gradient(90deg, #000, #212121, #000);
 }
 
-/* Card Content */
 .kkrf-career-job-card h3 {
   font-size: 1.2rem;
   padding: 20px 20px 6px;
 }
 
 .kkrf-career-job-card p {
+  color: #555;
   padding: 0 20px;
   font-weight: 600;
   font-size: 0.95rem;
-  color: #555;
 }
 
 .kkrf-career-job-card a {
-  display: inline-block;
-  padding: 14px 20px 22px;
-  font-size: 0.95rem;
   color: #000;
   font-weight: 500;
+  font-size: 0.95rem;
   text-decoration: none;
+  display: inline-block;
+  padding: 14px 20px 22px;
 }
 
 .kkrf-career-job-card a i {
@@ -735,10 +719,9 @@
   transition: transform 0.3s ease;
 }
 
-/* Hover */
 .kkrf-career-job-card:hover {
-  transform: translateY(-8px);
   background: #dedede;
+  transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -746,8 +729,7 @@
   transform: translateX(6px);
 }
 
-/* Responsive */
-
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .kkrf-career-job-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -764,8 +746,8 @@
   }
 
   .kkrf-career-selects {
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -788,3 +770,31 @@
 }
 
 /*! Left Job Cards (Fade + Lift) Section Bar */
+
+.kkrf-career-culture-container,
+.kkrf-career-why-container,
+.kkrf-career-trending-container {
+  width: 100%;
+  max-width: 1290px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+
+.kkrf-career-job-grid {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+  .kkrf-career-job-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .kkrf-career-job-grid {
+    grid-template-columns: 1fr;
+  }
+}
