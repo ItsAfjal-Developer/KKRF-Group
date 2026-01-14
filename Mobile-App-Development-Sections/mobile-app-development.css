@@ -1,5 +1,16 @@
 /*! Start Hero Section Bar */
 
+body.preload * {
+  transition: none !important;
+  animation: none !important;
+}
+
+.hero,
+.hero * {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
 .kkrf-main-new-mobile-ad-top-section {
   background: #000;
   padding: 40px 0;
@@ -143,10 +154,6 @@
   padding: 70px 0;
   color: #f8f8f8;
   background: #000;
-  background-image: url("/Images/NFT\ Banner01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .clients .container {
@@ -1198,42 +1205,38 @@
 
 /* Responsive */
 @media (hover: hover) and (pointer: fine) {
-  .kkrf-new-main-mobile-ad-journey-card:hover
-  .kkrf-new-main-mobile-ad-journey-card-inner {
+  .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
     transform: rotateY(180deg);
   }
 
-.kkrf-new-main-mobile-ad-journey-card.is-flipped
-.kkrf-new-main-mobile-ad-journey-card-inner {
-  transform: rotateY(180deg);
-}
+  .kkrf-new-main-mobile-ad-journey-card.is-flipped .kkrf-new-main-mobile-ad-journey-card-inner {
+    transform: rotateY(180deg);
+  }
 
-.kkrf-new-main-mobile-ad-journey-card {
-  perspective: 1200px;
-}
+  .kkrf-new-main-mobile-ad-journey-card {
+    perspective: 1200px;
+  }
 
-.kkrf-new-main-mobile-ad-journey-card-inner {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.7s ease;
-}
+  .kkrf-new-main-mobile-ad-journey-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+  }
 
-.kkrf-new-main-mobile-ad-journey-card-front,
-.kkrf-new-main-mobile-ad-journey-card-back {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
+  .kkrf-new-main-mobile-ad-journey-card-front,
+  .kkrf-new-main-mobile-ad-journey-card-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
 
-.kkrf-new-main-mobile-ad-journey-card-back {
-  transform: rotateY(180deg);
-}
-
+  .kkrf-new-main-mobile-ad-journey-card-back {
+    transform: rotateY(180deg);
+  }
 }
 
 @media (max-width: 1024px) {
-
   .kkrf-new-main-mobile-ad-journey-title {
     font-size: 26px;
   }
@@ -1249,7 +1252,6 @@
 }
 
 @media (max-width: 768px) {
-
   .kkrf-new-main-mobile-ad-journey-section {
     padding: 52px 0;
   }

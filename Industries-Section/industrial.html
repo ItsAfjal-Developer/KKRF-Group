@@ -54,7 +54,7 @@
             type="image/jpeg">
     </head>
 
-    <body>
+    <body class="energy-utilities-page">
 
         <!--Start Announcement Section Bar -->
         <header class="announcement-bar">
@@ -2734,26 +2734,45 @@
 
                     <form>
                         <div class="row">
-                            <input type="text" placeholder="Full Name*"
+                            <input type="text" name="name"
+                                placeholder="Full Name*" autocomplete="name"
                                 required>
-                            <input type="email" placeholder="E-Mail ID*"
+
+                            <input type="email" name="email"
+                                placeholder="E-Mail ID*" autocomplete="email"
                                 required>
                         </div>
 
                         <textarea
+                            name="message"
                             placeholder="Describe Your Project / Idea In Brief (Helps Us Come Back Better Prepared)"
-                            required>
-                        </textarea>
+                            autocomplete="off"
+                            required></textarea>
 
                         <div class="row">
-                            <input type="text" placeholder="+91">
                             <input type="text"
-                                placeholder="Contact Number*">
+                                name="country_code"
+                                placeholder="+91"
+                                autocomplete="tel-country-code">
+
+                            <input type="text"
+                                name="phone"
+                                placeholder="Contact Number*"
+                                autocomplete="tel"
+                                required>
                         </div>
 
                         <div class="row action-row">
-                            <input type="text" placeholder="1 + 4 = ?"
-                                class="captcha">
+                            <input
+                                type="text"
+                                class="captcha"
+                                name="captcha"
+                                id="captcha"
+                                placeholder="1 + 4 = ?"
+                                inputmode="numeric"
+                                autocomplete="off"
+                                required>
+
                             <button type="submit" class="cta-btn">
                                 Schedule Consultation
                             </button>
@@ -2850,12 +2869,19 @@
                         <div class="android-form-row">
                             <div class="android-form-group">
                                 <label for="company">Company Name</label>
-                                <input type="text" id="company"
-                                    name="company" />
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    autocomplete="organization" />
                             </div>
                             <div class="android-form-group">
                                 <label for="email">Work Email*</label>
-                                <input type="email" id="email" name="email"
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
                                     required />
                             </div>
                         </div>
@@ -2887,7 +2913,7 @@
                             </label>
                             <textarea id="project" name="project" rows="3"
                                 required>
-                            </textarea>
+                      </textarea>
                         </div>
 
                         <div class="android-recaptcha-box">
@@ -2978,31 +3004,31 @@
                     <ul class="footer-list">
                         <li>
                             <a
-                                href="/Industries Section/media-and-entertainment.html">
+                                href="/Industries-Section/media-and-entertainment.html">
                                 Media & Entertainment
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Industries Section/financial-services-insurance.html">
+                                href="/Industries-Section/financial-services-insurance.html">
                                 Financial Services
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Industries Section/energy-utilities.html">
+                                href="/Industries-Section/energy-utilities.html">
                                 Energy & Utilities
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Industries Section/healthcare-and-life.html">
+                                href="/Industries-Section/healthcare-and-life.html">
                                 Healthcare and Life
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Industries Section/retail-and-cpg.html">
+                                href="/Industries-Section/retail-and-cpg.html">
                                 Retail and CPG
                             </a>
                         </li>
@@ -3018,19 +3044,19 @@
                     <ul class="footer-list">
                         <li>
                             <a
-                                href="/Our Firm Section/company-overview.html">
+                                href="/Our-Firm-Section/company-overview.html">
                                 Company Overview
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Our Firm Section/what-going-at-kkrf.html">
+                                href="/Our-Firm-Section/what-going-at-kkrf.html">
                                 What Going at KKRF
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Our Firm Section/leadeship-and-board.html">
+                                href="/Our-Firm-Section/leadeship-and-board.html">
                                 Leadership and Board
                             </a>
                         </li>
@@ -3042,7 +3068,7 @@
                         </li>
                         <li>
                             <a
-                                href="/Our Firm Section/case-study.html">
+                                href="/Our-Firm-Section/case-study.html">
                                 Case Study
                             </a>
                         </li>
@@ -3058,31 +3084,31 @@
                     <ul class="footer-list">
                         <li>
                             <a
-                                href="/Software Development Services/erp-software-development.html">
+                                href="/Software-Development-Services/erp-software-development.html">
                                 ERP Development
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Blockchain Services/custom-crm.html">
+                                href="/Blockchain-Services/custom-crm.html">
                                 Custom CRM Development
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Software Development Services/ar-vr-development.html">
+                                href="/Software-Development-Services/ar-vr-development.html">
                                 AR/VR Development
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Software Development Services/iot-development.html">
+                                href="/Software-Development-Services/iot-development.html">
                                 IoT Development
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Software Development Services/microservice.html">
+                                href="/Software-Development-Services/microservice.html">
                                 Microservices
                             </a>
                         </li>

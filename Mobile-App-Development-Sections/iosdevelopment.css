@@ -1,6 +1,16 @@
 /*! Start Hero Section Bar */
 
-/* ================== HERO – DESKTOP BASE ================== */
+body.preload * {
+    transition: none !important;
+    animation: none !important;
+}
+
+.hero,
+.hero * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 .hero {
     width: 100%;
     display: flex;
@@ -229,9 +239,7 @@ textarea {
     .hero-form-overlay {
         display: none !important;
     }
-}
 
-@media (max-width: 768px) {
     .hero {
         overflow: visible;
         background: #000;
@@ -284,9 +292,6 @@ textarea {
         padding: 12px 28px;
         white-space: nowrap;
     }
-}
-
-@media (max-width: 768px) {
 
     .hero-mobile-video-wrapper {
         position: relative;
@@ -928,9 +933,6 @@ textarea {
     .kkrf-why-title {
         font-size: 28px;
     }
-}
-
-@media (max-width: 768px) {
 
     .kkrf-why-tabs {
         gap: 12px;

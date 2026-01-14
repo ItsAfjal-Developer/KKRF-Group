@@ -54,7 +54,7 @@
             type="image/jpeg">
     </head>
 
-    <body>
+    <body class="energy-utilities-page">
 
         <!--Start Announcement Section Bar -->
         <header class="announcement-bar">
@@ -2220,7 +2220,7 @@
                             class="sector-btn sector-btn-primary">
                             Contact us
                         </a>
-                        <a href="/Our Firm Section/blog.html"
+                        <a href="/Our-Firm-Section/blog.html"
                             class="sector-btn sector-btn-secondary">
                             Explore services
                         </a>
@@ -2733,26 +2733,45 @@
 
                     <form>
                         <div class="row">
-                            <input type="text" placeholder="Full Name*"
+                            <input type="text" name="name"
+                                placeholder="Full Name*" autocomplete="name"
                                 required>
-                            <input type="email" placeholder="E-Mail ID*"
+
+                            <input type="email" name="email"
+                                placeholder="E-Mail ID*" autocomplete="email"
                                 required>
                         </div>
 
                         <textarea
+                            name="message"
                             placeholder="Describe Your Project / Idea In Brief (Helps Us Come Back Better Prepared)"
-                            required>
-                        </textarea>
+                            autocomplete="off"
+                            required></textarea>
 
                         <div class="row">
-                            <input type="text" placeholder="+91">
                             <input type="text"
-                                placeholder="Contact Number*">
+                                name="country_code"
+                                placeholder="+91"
+                                autocomplete="tel-country-code">
+
+                            <input type="text"
+                                name="phone"
+                                placeholder="Contact Number*"
+                                autocomplete="tel"
+                                required>
                         </div>
 
                         <div class="row action-row">
-                            <input type="text" placeholder="1 + 4 = ?"
-                                class="captcha">
+                            <input
+                                type="text"
+                                class="captcha"
+                                name="captcha"
+                                id="captcha"
+                                placeholder="1 + 4 = ?"
+                                inputmode="numeric"
+                                autocomplete="off"
+                                required>
+
                             <button type="submit" class="cta-btn">
                                 Schedule Consultation
                             </button>
@@ -2829,85 +2848,85 @@
                         </h4>
                     </div>
 
-                     <!-- RIGHT SIDE FORM (DESKTOP SIDE / MOBILE POPUP) -->
-                     <form class="android-contact-form"
-                     aria-label="Contact Form">
+                    <!-- RIGHT SIDE FORM (DESKTOP SIDE / MOBILE POPUP) -->
+                    <form class="android-contact-form"
+                        aria-label="Contact Form">
 
-                     <div class="android-form-row">
-                         <div class="android-form-group">
-                             <label for="firstName">First Name*</label>
-                             <input type="text" id="firstName"
-                                 name="firstName" required />
-                         </div>
-                         <div class="android-form-group">
-                             <label for="lastName">Last Name</label>
-                             <input type="text" id="lastName"
-                                 name="lastName" />
-                         </div>
-                     </div>
+                        <div class="android-form-row">
+                            <div class="android-form-group">
+                                <label for="firstName">First Name*</label>
+                                <input type="text" id="firstName"
+                                    name="firstName" required />
+                            </div>
+                            <div class="android-form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName"
+                                    name="lastName" />
+                            </div>
+                        </div>
 
-                     <div class="android-form-row">
-                         <div class="android-form-group">
-                             <label for="company">Company Name</label>
-                             <input
-                                 type="text"
-                                 id="company"
-                                 name="company"
-                                 autocomplete="organization" />
-                         </div>
-                         <div class="android-form-group">
-                             <label for="email">Work Email*</label>
-                             <input
-                                 type="email"
-                                 id="email"
-                                 name="email"
-                                 autocomplete="email"
-                                 required />
-                         </div>
-                     </div>
+                        <div class="android-form-row">
+                            <div class="android-form-group">
+                                <label for="company">Company Name</label>
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    autocomplete="organization" />
+                            </div>
+                            <div class="android-form-group">
+                                <label for="email">Work Email*</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required />
+                            </div>
+                        </div>
 
-                     <div class="android-form-group">
-                         <label for="budget">
-                             What is your budget range?*
-                         </label>
-                         <select id="budget" name="budget" required>
-                             <option value>
-                                 — Please Choose an Option —
-                             </option>
-                             <option value="5k-10k">
-                                 50,000 - 100,000
-                             </option>
-                             <option value="10k-25k">
-                                 100,000 - 250,000
-                             </option>
-                             <option value="25k-50k">
-                                 250,000 - 500,000
-                             </option>
-                             <option value="50k+">500,000+</option>
-                         </select>
-                     </div>
+                        <div class="android-form-group">
+                            <label for="budget">
+                                What is your budget range?*
+                            </label>
+                            <select id="budget" name="budget" required>
+                                <option value>
+                                    — Please Choose an Option —
+                                </option>
+                                <option value="5k-10k">
+                                    50,000 - 100,000
+                                </option>
+                                <option value="10k-25k">
+                                    100,000 - 250,000
+                                </option>
+                                <option value="25k-50k">
+                                    250,000 - 500,000
+                                </option>
+                                <option value="50k+">500,000+</option>
+                            </select>
+                        </div>
 
-                     <div class="android-form-group">
-                         <label for="project">
-                             Let us know more about Your Project/Idea*
-                         </label>
-                         <textarea id="project" name="project" rows="3"
-                             required>
+                        <div class="android-form-group">
+                            <label for="project">
+                                Let us know more about Your Project/Idea*
+                            </label>
+                            <textarea id="project" name="project" rows="3"
+                                required>
                          </textarea>
-                     </div>
+                        </div>
 
-                     <div class="android-recaptcha-box">
-                         <div class="g-recaptcha"
-                             data-sitekey="Write the Site Key">
-                         </div>
-                     </div>
+                        <div class="android-recaptcha-box">
+                            <div class="g-recaptcha"
+                                data-sitekey="Write the Site Key">
+                            </div>
+                        </div>
 
-                     <button type="submit"
-                         class="android-form-submit-button">
-                         Send Me the Message
-                     </button>
+                        <button type="submit"
+                            class="android-form-submit-button">
+                            Send Me the Message
+                        </button>
 
-                 </form>
+                    </form>
                 </div>
             </div>
         </section>

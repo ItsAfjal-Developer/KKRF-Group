@@ -7,12 +7,21 @@
 html, body {
     width: 100%;
     max-width: 100%;
-    /* overflow-x: hidden; */
+}
+
+body.preload * {
+    transition: none !important;
+    animation: none !important;
+}
+
+.hero,
+.hero * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 /*! Start Hero Section Bar */
 
-/* HERO */
 .hero {
     width: 100%;
     display: flex;
@@ -241,9 +250,7 @@ textarea {
     .hero-form-overlay {
         display: none !important;
     }
-}
 
-@media (max-width: 768px) {
     .hero {
         overflow: visible;
         background: #000;
@@ -296,10 +303,6 @@ textarea {
         padding: 12px 28px;
         white-space: nowrap;
     }
-
-}
-
-@media (max-width: 768px) {
 
     .hero-mobile-video-wrapper {
         position: relative;
@@ -375,7 +378,6 @@ textarea {
     box-sizing: border-box;
 }
 
-/* ❌ REMOVE / OVERRIDE THIS */
 .partner-section {
     overflow: visible !important;
 }
@@ -478,7 +480,6 @@ textarea {
 }
 
 @media (max-width: 992px) {
-
     .partner-inner {
         gap: 12px;
         flex-direction: column;
@@ -508,7 +509,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-
     .feature-box {
         opacity: 0;
         transform: translateX(0);
@@ -572,7 +572,6 @@ textarea {
 }
 
 /* ================================ SWIPER ================================ */
-
 .product-features-swiper {
     cursor: grab;
     position: relative;
@@ -593,7 +592,6 @@ textarea {
 }
 
 /* ================================ CARD (PREMIUM 3D) ================================ */
-
 .product-feature-card {
     height: 100%;
     padding: 28px;
@@ -701,7 +699,6 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
     .product-feature-card,
     .stage-icon {
         transition: none !important;
@@ -722,8 +719,6 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-
-  /* Hero / main section full width */
   .hero,
   .blockchain-hero,
   .hero-section {

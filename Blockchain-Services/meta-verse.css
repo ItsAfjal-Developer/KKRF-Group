@@ -384,14 +384,12 @@ textarea {
   line-height: 1.7;
 }
 
-/* GRID */
 .app-benefits-grid {
   gap: 32px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* CARD */
 .app-benefit-card {
   padding: 28px;
   border-radius: 16px;
@@ -408,7 +406,6 @@ textarea {
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* ICON */
 .app-benefit-icon-wrapper {
   width: 36px;
   height: 36px;

@@ -1867,3 +1867,18 @@
 }
 
 /*! End KKRF Case Study Section Bar */
+
+
+
+/*! Start the Android Form Group Career Link */
+
+.career-link {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.career-link:hover {
+    color: darkgrey;
+}
+
+/*! End the Android Form Group Career Link */

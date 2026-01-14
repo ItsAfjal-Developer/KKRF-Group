@@ -4,6 +4,17 @@ body {
   max-width: 100%;
 }
 
+body.preload * {
+  transition: none !important;
+  animation: none !important;
+}
+
+.hero,
+.hero * {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
 /*! Start KKRF Main New Career Page Apply Section */
 
 /* ================= SECTION ================= */

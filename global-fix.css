@@ -1,6 +1,3 @@
-/* ================= GLOBAL STABILITY FIX ================= */
-
-/* Prevent reload flash */
 html {
   scroll-behavior: smooth;
 }
@@ -13,12 +10,10 @@ body {
   background: #000;
 }
 
-/* Prevent layout jump */
 * {
   box-sizing: border-box;
 }
 
-/* Container safety */
 .container {
   width: 100%;
   max-width: 1290px;
@@ -26,14 +21,12 @@ body {
   padding-inline: 20px;
 }
 
-/* Tablet fix */
 @media (max-width: 1024px) {
   .container {
     max-width: 100%;
   }
 }
 
-/* Mobile fix */
 @media (max-width: 768px) {
   .container {
     padding-inline: 16px;
@@ -56,28 +49,10 @@ footer {
   will-change: transform, opacity;
 }
 
-/* Mobile menu default hidden */
-/* nav.mobile-nav {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(100%);
-  transition: transform 0.3s ease, opacity 0.2s ease;
-}
-
-nav.mobile-nav.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-} */
-
-/* Footer flash fix */
 footer {
   opacity: 1;
   visibility: visible;
 }
-
-
-/* ===== FORCE STABLE CARD WIDTH ===== */
 
 .partner-section,
 .features-container,

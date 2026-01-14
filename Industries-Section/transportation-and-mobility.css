@@ -3,20 +3,17 @@
 .me-hero {
     display: flex;
     overflow: hidden;
-    /* min-height: 80vh; */
     position: relative;
     align-items: center;
     background: #050505;
 }
 
-/* ===== Particles ===== */
 .me-hero__particles {
     inset: 0;
     z-index: 1;
     position: absolute;
 }
 
-/* ===== Container ===== */
 .me-hero__container {
     z-index: 2;
     width: 100%;
@@ -26,12 +23,10 @@
     position: relative;
 }
 
-/* ===== Content ===== */
 .me-hero__content {
     max-width: 760px;
 }
 
-/* ===== Category ===== */
 .me-hero__category {
     font-size: 16px;
     font-weight: 500;
@@ -41,7 +36,6 @@
     display: inline-block;
 }
 
-/* ===== Main Heading ===== */
 .me-hero__title {
     font-size: 46px;
     font-weight: 700;
@@ -63,7 +57,6 @@
     margin-bottom: 36px;
 }
 
-/* ===== Buttons ===== */
 .me-hero__actions {
     gap: 16px;
     display: flex;
@@ -173,7 +166,6 @@
         flex-direction: column;
     }
 
-
     .btn-outline{
         margin-bottom: 110px;
     }
@@ -181,7 +173,6 @@
     .btn {
         width: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -207,7 +198,6 @@
     max-width: 1320px;
 }
 
-/* ================= HEADER ================= */
 .success-header {
     display: flex;
     margin-bottom: 14px;
@@ -325,7 +315,6 @@
 }
 
 /* ================= Content ================= */
-
 .success-content {
     gap: 12px;
     z-index: 4;
@@ -362,7 +351,6 @@
     color: #f8f8f8;
     line-height: 1.45;
 }
-
 
 /* ================= SWIPER NAV ================= */
 .success-swiper .swiper-button-prev,
@@ -568,14 +556,10 @@
 }
 
 @media (max-width: 640px) {
-
     .sector-title {
         font-size: 18px;
         margin-bottom: 32px;
     }
-}
-
-@media (max-width: 640px) {
 
     .sector-tags {
         display: flex;
@@ -595,9 +579,6 @@
     .sector-tag:active {
         transform: scale(0.98);
     }
-}
-
-@media (max-width: 640px) {
 
     .sector-cta {
         padding: 24px 20px;
@@ -651,7 +632,6 @@
     max-width: 1290px;
 }
 
-/* ================= Title ================= */
 .insights-title {
     font-size: 36px;
     color: #000000;
@@ -660,14 +640,12 @@
     letter-spacing: -0.02em;
 }
 
-/* ================= Grid ================= */
 .insights-grid {
     gap: 32px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* ================= Card ================= */
 .insight-card {
     display: flex;
     overflow: hidden;
@@ -686,7 +664,6 @@
     box-shadow: 0 28px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* ================= Image ================= */
 .insight-image {
     flex: 0 0 42%;
     overflow: hidden;
@@ -814,3 +791,236 @@
 }
 
 /*! End Insights Section Bar */
+
+
+/*! Start the Android Form Group Career Link */
+
+.career-link {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.career-link:hover {
+    color: darkgrey;
+}
+
+/*! End the Android Form Group Career Link */
+
+
+/*! Start Energy & Utilities PopUp Fix */
+
+.energy-utilities-page {
+    position: relative;
+}
+
+.energy-utilities-page .popup {
+    z-index: 9999;
+}
+
+.energy-utilities-page.popup-open {
+    overflow: hidden;
+}
+
+.energy-utilities-page .me-hero {
+    isolation: isolate;
+}
+
+/*! Energy Energy & Utilities PopUp Fix */
+
+
+/*! Start Android Hero Section Bar */
+
+.android-contact-form {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 18px;
+    background: #050505;
+    padding: 24px 28px 26px;
+    border: 1px solid #262626;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.android-form-row {
+    gap: 16px;
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.android-form-group {
+    gap: 6px;
+    display: flex;
+    margin-bottom: 14px;
+    flex-direction: column;
+}
+
+.android-form-group label {
+    font-size: 13px;
+    color: #e5e5e5;
+}
+
+.android-form-group input,
+.android-form-group select,
+.android-form-group textarea {
+    outline: none;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 9px 10px;
+    border-radius: 10px;
+    background: #0d0d0d;
+    border: 1px solid #333333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.android-form-group input:focus,
+.android-form-group select:focus,
+.android-form-group textarea:focus {
+    background: #101010;
+    border-color: darkgray;
+    box-shadow: 0 0 0 1px rgba(74, 144, 226, 0.6);
+}
+
+.android-form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.android-recaptcha-box {
+    margin: 16px 0 18px;
+}
+
+.android-form-submit-button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 11px 18px;
+    background: #f8f8f8;
+    transition: background 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.android-form-submit-button:hover {
+    color: #000000;
+    background: #f1f1f1;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.android-form-submit-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.android-hero-form-overlay {
+    display: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .android-hero-section {
+        padding: 40px 20px;
+    }
+
+    .android-hero-content {
+        row-gap: 32px;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .android-form-row {
+        color: #000;
+    }
+
+    .android-contact-form {
+        color: #000;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f8f8f8;
+    }
+
+    .android-hero-text {
+        padding: 0 4px;
+    }
+
+    .android-form-submit-button {
+        color: #f8f8f8;
+        background-color: #000;
+    }
+
+    .android-contact-form input,
+    .android-contact-form select,
+    .android-contact-form textarea {
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #cccccc !important;
+    }
+
+    .android-contact-form label {
+        color: #000 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .android-contact-form input,
+    .android-contact-form select,
+    .android-contact-form textarea {
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #cccccc !important;
+    }
+
+    .android-contact-form label {
+        color: #000 !important;
+    }
+
+    .android-contact-form select {
+        background-image: none;
+    }
+
+    .android-hero-section {
+        padding: 30px 8px;
+    }
+
+    .android-hero-container {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    .android-contact-form {
+        width: 100%;
+        margin: 0 auto;
+        padding: 16px 12px;
+        border-radius: 14px;
+    }
+
+    .android-hero-text {
+        padding: 0 4px;
+    }
+
+    .android-form-submit-button {
+        color: #f8f8f8;
+        background-color: #000;
+    }
+}
+
+@media (max-width: 480px) {
+    .android-hero-text h2:first-of-type {
+        font-size: 24px;
+    }
+
+    .android-hero-text h2:nth-of-type(2),
+    .android-hero-text h2:nth-of-type(3) {
+        font-size: 18px;
+    }
+
+    .android-hero-text p {
+        font-size: 13px;
+    }
+}
+
+/*! End Android Hero Section Bar */
