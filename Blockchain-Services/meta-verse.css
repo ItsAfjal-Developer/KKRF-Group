@@ -7,8 +7,8 @@ body.preload * {
 
 .hero,
 .hero * {
-backface-visibility: hidden;
--webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .hero {
@@ -49,8 +49,6 @@ backface-visibility: hidden;
   justify-content: space-between;
 }
 
-
-/* LEFT TEXT COLUMN */
 .hero-text {
   flex: 1;
   max-width: 480px;
@@ -71,8 +69,6 @@ backface-visibility: hidden;
   margin-bottom: 22px;
 }
 
-
-/* CTA BUTTON */
 .cta-button {
   color: #f8f8f8;
   font-weight: 600;
@@ -93,8 +89,6 @@ backface-visibility: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
-/* RIGHT DESKTOP FORM */
 .contact-form {
   flex: 1;
   padding: 32px;
@@ -431,7 +425,6 @@ textarea {
   color: #f8f8f8;
 }
 
-/* SCROLL REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -627,113 +620,113 @@ textarea {
 /*! Start Recognition Process Section Bar */
 
 .recognition-section {
-    padding: 40px 0;
-    text-align: center;
-    background: #000000;
-    font-family: "Inter", sans-serif;
+  padding: 40px 0;
+  text-align: center;
+  background: #000000;
+  font-family: "Inter", sans-serif;
 }
 
 .recognition-section .container {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1300px;
 }
 
 .recognition-title {
-    color: #f8f8f8;
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 22px;
+  color: #f8f8f8;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 22px;
 }
 
 .recognition-btn {
-    gap: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #f8f8f8;
-    padding: 12px 28px;
-    background: #111;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    border: 1px solid #222;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  padding: 12px 28px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #222;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .recognition-btn:hover {
-    background: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  background: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 .recognition-btn .arrow {
-    font-size: 16px;
-    margin-top: 1px;
-    display: inline-block;
-    transition: transform 0.3s ease;
+  font-size: 16px;
+  margin-top: 1px;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .recognition-btn:hover .arrow {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .recognition-image {
-    opacity: 1;
-    margin-top: 32px;
-    overflow: hidden;
-    border-radius: 14px;
-    transform: translateY(0);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 1;
+  margin-top: 32px;
+  overflow: hidden;
+  border-radius: 14px;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .recognition-image.reveal {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .recognition-image img {
-    left: 50%;
-    width: 120%;
-    height: 420px;
-    display: block;
-    max-width: none;
-    object-fit: cover;
-    position: relative;
-    transition: transform 0.6s ease;
-    transform: translateX(-50%) scale(1);
+  left: 50%;
+  width: 120%;
+  height: 420px;
+  display: block;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform: translateX(-50%) scale(1);
 }
 
 .recognition-image:hover img {
-    transform: translateX(-50%) scale(1.05);
+  transform: translateX(-50%) scale(1.05);
 }
 
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .recognition-title {
-        font-size: 22px;
-    }
+  .recognition-title {
+    font-size: 22px;
+  }
 
-    .recognition-image img {
-        height: 35%;
-    }
+  .recognition-image img {
+    height: 35%;
+  }
 }
 
 @media (max-width: 480px) {
-    .recognition-title {
-        font-size: 16px;
-    }
+  .recognition-title {
+    font-size: 16px;
+  }
 
-    .recognition-btn {
-        padding: 10px 22px;
-        font-size: 14px;
-    }
+  .recognition-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
 
-    .recognition-image img {
-        border-radius: 10px;
-    }
+  .recognition-image img {
+    border-radius: 10px;
+  }
 }
 
 /*! End Recognition Process Section Bar */

@@ -1,6 +1,5 @@
 /*!  Start Hero Section Bar */
 
-/* ================= HERO SECTION ================= */
 .kkrf-hero {
     width: 100%;
     display: flex;
@@ -12,7 +11,6 @@
     background-color: #020814;
 }
 
-/* ================= VIDEO BACKGROUND ================= */
 .kkrf-hero__video {
     inset: 0;
     z-index: 0;
@@ -449,7 +447,6 @@
 }
 
 @media (max-width: 768px) {
-
     .impact-section {
         padding: 30px 0;
         background: #000000;
@@ -600,7 +597,6 @@
     margin-bottom: 48px;
 }
 
-/* Row with lines */
 .kkrf-new-main-mobile-ad-journey-heading-row {
     gap: 32px;
     display: flex;
@@ -608,7 +604,6 @@
     justify-content: center;
 }
 
-/* Left & Right lines */
 .journey-line {
     height: 1px;
     width: 120px;
@@ -616,13 +611,11 @@
     background: rgba(255, 255, 255, 0.35);
 }
 
-/* Text wrapper */
 .journey-text {
     max-width: 920px;
     text-align: center;
 }
 
-/* Title */
 .kkrf-new-main-mobile-ad-journey-title {
     font-size: 28px;
     font-weight: 700;
@@ -631,7 +624,6 @@
     margin-bottom: 14px;
 }
 
-/* Description */
 .kkrf-new-main-mobile-ad-journey-description {
     font-size: 16px;
     line-height: 1.6;
@@ -647,7 +639,6 @@
         transform 0.8s cubic-bezier(.4, 0, .2, 1);
 }
 
-/* Active state */
 .reveal-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -745,7 +736,7 @@
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* When visible */
+/* When Visible */
 .kkrf-new-main-mobile-ad-journey-card.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -759,7 +750,7 @@
     transition: transform 0.7s ease;
 }
 
-/* Desktop hover flip */
+/* Desktop Hover Flip */
 @media (min-width: 769px) {
     .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
         transform: rotateY(180deg);
@@ -869,9 +860,7 @@
     .kkrf-new-main-mobile-ad-journey-card p {
         font-size: 12px;
     }
-}
 
-@media (max-width: 768px) {
     .kkrf-new-main-mobile-ad-journey-card {
         flex: 0 0 180px;
         height: 300px;
@@ -1219,18 +1208,12 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-
-    /* .kkrf-news {
-        padding: 64px 0 72px;
-    } */
-
     .kkrf-news__container {
         gap: 40px;
         padding: 0 20px;
         grid-template-columns: 1fr;
     }
 
-    /* CONTENT FIRST */
     .kkrf-news__content {
         order: 1;
         padding: 0 6px;
@@ -1260,7 +1243,6 @@
         padding: 12px 20px;
     }
 
-    /* IMAGE */
     .kkrf-news__image {
         order: 2;
         width: 100%;
@@ -1433,28 +1415,23 @@
 }
 
 @media (max-width: 768px) {
-
-    /* HERO */
     .kkrf-ai-hero {
         padding: 24px 0 40px;
         background: linear-gradient(180deg, #191e53 0%, #050617 100%);
     }
 
-    /* CONTAINER */
     .kkrf-ai-hero__container {
         display: flex;
         padding: 0 26px;
         flex-direction: column;
     }
 
-    /* LOGO */
     .kkrf-ai-hero__logo {
         order: 1;
         text-align: left;
         margin-bottom: 16px;
     }
 
-    /* CUBE + HAND IMAGE WRAPPER */
     .kkrf-ai-hero__visual {
         order: 2;
         display: flex;
@@ -1471,13 +1448,11 @@
         max-width: none;
     }
 
-    /* CONTENT */
     .kkrf-ai-hero__content {
         order: 3;
         text-align: left;
     }
 
-    /* TITLE */
     .kkrf-ai-hero__title {
         font-size: 26px;
         font-weight: 700;
@@ -1486,7 +1461,6 @@
         margin-bottom: 10px;
     }
 
-    /* TEXT */
     .kkrf-ai-hero__text {
         font-size: 14px;
         line-height: 1.7;
@@ -1494,7 +1468,6 @@
         margin-bottom: 18px;
     }
 
-    /* BUTTON */
     .kkrf-ai-hero__btn {
         width: 100%;
         font-size: 16px;
@@ -1513,6 +1486,7 @@
 .kkrf-industry-section {
     color: #ffffff;
     padding: 72px 20px 60px;
+
     background-color: #000000;
 }
 
@@ -1628,18 +1602,14 @@
     }
 }
 
-/* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     .kkrf-industry-section {
         padding: 56px 16px 48px;
     }
 
-    .kkrf-industry-header {
-        text-align: left;
-    }
-
     .kkrf-industry-header .heading-intelligence-services {
-        font-size: 25px;
+        font-size: 22px;
+        text-align: center;
     }
 
     .kkrf-industry-description {
@@ -1652,7 +1622,8 @@
     }
 
     .kkrf-industry-item {
-        padding: 24px 10px;
+        padding: 24px 5px;
+
     }
 
     .kkrf-industry-item:nth-child(3n) {
@@ -1664,12 +1635,11 @@
     }
 
     .kkrf-industry-icon img {
-        max-width: 110px;
-        max-height: 42px;
+        max-width: 90px;
+        max-height: 38px;
     }
 }
 
-/* ---------- SMALL MOBILE ---------- */
 @media (max-width: 576px) {
     .kkrf-industry-name {
         font-size: 14px;
@@ -1867,7 +1837,6 @@
 }
 
 /*! End KKRF Case Study Section Bar */
-
 
 
 /*! Start the Android Form Group Career Link */

@@ -7,8 +7,8 @@ body.preload * {
 
 .hero,
 .hero * {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .hero {
@@ -599,7 +599,6 @@ textarea {
     line-height: 1.5;
 }
 
-/* RIGHT: Detail Panel */
 .trusted-section .ts-detail-panel {
     width: 62%;
     color: #111;
@@ -609,7 +608,6 @@ textarea {
     border-radius: 0 18px 18px 0;
 }
 
-/* Icon INSIDE Each Detail */
 .trusted-section .ts-detail-icon {
     width: 40px;
     height: 40px;
@@ -628,7 +626,6 @@ textarea {
     object-fit: contain;
 }
 
-/* Detail Content */
 .trusted-section .ts-detail {
     display: none;
 }
@@ -1199,7 +1196,7 @@ textarea {
         border-radius: 18px;
     }
 
-      .tech-number {
+    .tech-number {
         min-width: 32px;
         font-size: 14px;
     }
@@ -1208,6 +1205,6 @@ textarea {
         font-size: 14px;
         line-height: 1.4;
     }
-} 
+}
 
 /*! End Technologies Section Bar */

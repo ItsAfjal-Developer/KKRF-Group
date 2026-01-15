@@ -77,7 +77,6 @@
     transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, color 0.35s ease;
 }
 
-/* ================= Primary ================= */
 .btn-primary {
     color: black;
     background: linear-gradient(135deg,
@@ -111,7 +110,6 @@
     opacity: 1;
 }
 
-/* ================= Outline ================= */
 .btn-outline {
     color: #ffffff;
     backdrop-filter: blur(6px);
@@ -126,7 +124,6 @@
     box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
 }
 
-/* ================= Active (Press) ================= */
 .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
@@ -237,7 +234,6 @@
     margin-bottom: 48px;
 }
 
-/* ================= Swiper ================= */
 .success-swiper {
     padding-bottom: 56px;
 }
@@ -251,7 +247,6 @@
     height: auto;
 }
 
-/* ================= Card ================= */
 .success-card {
     height: 100%;
     overflow: hidden;
@@ -266,7 +261,6 @@
     transform: translateY(-8px);
 }
 
-/* ================= Image ================= */
 .success-image {
     height: 380px;
     overflow: hidden;
@@ -285,7 +279,6 @@
     transform: scale(1.08);
 }
 
-/* ================= Top Label ================= */
 .success-top-label {
     top: 16px;
     left: 16px;
@@ -298,7 +291,6 @@
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
 }
 
-/* ================= Overlay ================= */
 .success-overlay {
     inset: 0;
     z-index: 2;
@@ -314,7 +306,6 @@
             rgba(0, 0, 0, 0) 65%);
 }
 
-/* ================= Content ================= */
 .success-content {
     gap: 12px;
     z-index: 4;
@@ -325,7 +316,6 @@
     padding: 20px 20px 24px;
 }
 
-/* ================= Tags ================= */
 .success-tag {
     color: #9ff0d0;
     font-size: 12px;
@@ -344,7 +334,6 @@
     flex-wrap: wrap;
 }
 
-/* ================= Title ================= */
 .success-card-title {
     font-size: 17px;
     font-weight: 600;
@@ -352,7 +341,6 @@
     line-height: 1.45;
 }
 
-/* ================= SWIPER NAV ================= */
 .success-swiper .swiper-button-prev,
 .success-swiper .swiper-button-next {
     width: 44px;
@@ -442,7 +430,6 @@
     letter-spacing: -0.02em;
 }
 
-/* ================= Tags ================= */
 .sector-tags {
     gap: 14px;
     display: flex;
@@ -468,7 +455,6 @@
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* ================= CTA Card ================= */
 .sector-cta {
     gap: 24px;
     display: flex;
@@ -489,7 +475,6 @@
     color: #000000;
 }
 
-/* ================= CTA Buttons ================= */
 .sector-cta-actions {
     gap: 16px;
     display: flex;
@@ -682,7 +667,6 @@
     transform: scale(1.08);
 }
 
-/* ================= Content ================= */
 .insight-content {
     flex: 1;
     display: flex;
@@ -691,7 +675,6 @@
     justify-content: space-between;
 }
 
-/* Heading */
 .insight-heading {
     font-size: 18px;
     font-weight: 600;
@@ -700,7 +683,6 @@
     margin-bottom: 14px;
 }
 
-/* Description */
 .insight-description {
     font-size: 15px;
     line-height: 1.6;
@@ -708,7 +690,6 @@
     margin-bottom: 24px;
 }
 
-/* ================= Meta ================= */
 .insight-meta {
     gap: 16px;
     display: flex;
@@ -721,7 +702,6 @@
     color: #8f9696;
 }
 
-/* Link */
 .insight-link {
     font-size: 14px;
     font-weight: 600;

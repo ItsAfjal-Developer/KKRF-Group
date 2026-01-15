@@ -1275,6 +1275,7 @@ body.preload * {
     height: 300px;
     scroll-snap-align: center;
     margin-top: 0;
+    cursor: pointer;
   }
 
   .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
@@ -1297,6 +1298,20 @@ body.preload * {
   .kkrf-new-main-mobile-ad-journey-card p {
     font-size: 13px;
     line-height: 1.55;
+  }
+
+  .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
+    transform: none;
+  }
+
+  .kkrf-new-main-mobile-ad-journey-card.is-flipped .kkrf-new-main-mobile-ad-journey-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (min-width: 769px) {
+  .kkrf-new-main-mobile-ad-journey-card:hover .kkrf-new-main-mobile-ad-journey-card-inner {
+    transform: rotateY(180deg);
   }
 }
 
@@ -1406,3 +1421,115 @@ body.preload * {
 }
 
 /*! End NFT Metaverse Section Bar */
+
+
+/*! Start Recognition Process Section Bar */
+
+.recognition-section {
+  padding: 40px 0;
+  text-align: center;
+  background: #f8f8f8;
+  font-family: "Inter", sans-serif;
+}
+
+.recognition-section .container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1300px;
+}
+
+.recognition-title {
+  color: #111;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.recognition-btn {
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f8f8f8;
+  padding: 12px 28px;
+  background: #111;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #222;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recognition-btn:hover {
+  background: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.recognition-btn .arrow {
+  font-size: 16px;
+  margin-top: 1px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.recognition-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+.recognition-image {
+  opacity: 1;
+  margin-top: 32px;
+  overflow: hidden;
+  border-radius: 14px;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.recognition-image.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.recognition-image img {
+  left: 50%;
+  width: 120%;
+  height: 420px;
+  display: block;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform: translateX(-50%) scale(1);
+}
+
+.recognition-image:hover img {
+  transform: translateX(-50%) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .recognition-title {
+    font-size: 22px;
+  }
+
+  .recognition-image img {
+    height: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .recognition-title {
+    font-size: 18px;
+  }
+
+  .recognition-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .recognition-image img {
+    border-radius: 10px;
+  }
+}
+
+/*! End Recognition Process Section Bar */

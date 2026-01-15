@@ -2108,7 +2108,7 @@
 
                         <div class="journey-text">
                             <h2 class="kkrf-new-main-mobile-ad-journey-title">
-                                Using an AI-first approach, KKRF Group <br>
+                                Using an AI-first approach, KKRF Group
                                 Engineers
                                 Intelligent & Resilient Digital Solutions that
                                 enhance Decision-Making and Accelerate
@@ -2533,12 +2533,12 @@
                     </div>
                 </div>
 
-                <!-- 5. Logistics -->
+                <!-- 5. Americana -->
                 <div class="kkrf-industry-item">
                     <div class="kkrf-industry-icon">
                         <img
                             src="http://kkrfgroup.com/wp-content/uploads/2026/01/image-8.png"
-                            alt="Pathlabs">
+                            alt="Americana">
                     </div>
                 </div>
 
@@ -2584,6 +2584,51 @@
                         <img
                             src="http://kkrfgroup.com/wp-content/uploads/2026/01/bcg.png"
                             alt="bcg">
+                    </div>
+                </div>
+
+                <!-- 11. Dominos -->
+                <div class="kkrf-industry-item">
+                    <div class="kkrf-industry-icon">
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2025/12/image-15.png"
+                            alt="Dominos">
+                    </div>
+                </div>
+
+                <!-- 12. Metropolis -->
+                <div class="kkrf-industry-item">
+                    <div class="kkrf-industry-icon">
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2026/01/image-8.png"
+                            alt="Americana">
+                    </div>
+                </div>
+
+                <!-- 13. Everyday -->
+                <div class="kkrf-industry-item">
+                    <div class="kkrf-industry-icon">
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2026/01/image-22.png"
+                            alt="Everyday">
+                    </div>
+                </div>
+
+                <!-- 14. Pathlabs -->
+                <div class="kkrf-industry-item">
+                    <div class="kkrf-industry-icon">
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2026/01/bajaj.png"
+                            alt="Bajaj">
+                    </div>
+                </div>
+
+                <!-- 15. Logistics -->
+                <div class="kkrf-industry-item">
+                    <div class="kkrf-industry-icon">
+                        <img
+                            src="http://kkrfgroup.com/wp-content/uploads/2026/01/image-6.png"
+                            alt="Lauras Labs">
                     </div>
                 </div>
             </div>
@@ -3516,14 +3561,6 @@
         </script>
         <!-- End the Javascript Part → the MV Insights Section Bar -->
 
-        <!-- Start the Javascript Part → the JS Section for Pop Up Bar -->
-
-        <!-- End the Javascript Part → the JS Section for Pop Up Bar -->
-
-        <!-- Start the Javascript Part → Auto Pop-up after 20 Seconds -->
-
-        <!-- End the Javascript Part → Auto Pop-up after 20 Seconds -->
-
         <!-- Start the Javascript Part → the Auto Alternate + Scroll Trigger -->
         <script>
          (function () {
@@ -4010,49 +4047,6 @@
         </script>
         <!-- End the Javascript Part → Flip Cards Navigation Button -->
 
-        <!-- Start the Javascript Part → Flip Cards on Desktop -->
-        <script>
-         document.querySelectorAll(
-             ".kkrf-new-main-mobile-ad-journey-card"
-            ).forEach(card => {
-             card.addEventListener("click", () => {
-                 card.classList.toggle("is-flipped");
-                });
-            });
-        </script>
-        <!-- End the Javascript Part → Flip Cards on Desktop -->
-
-        <!-- Start the Javascript Part → Flip Cards on Responsive -->
-        <script>
-         document.addEventListener("DOMContentLoaded", () => {
-             const cards = document.querySelectorAll(
-                 ".kkrf-new-main-mobile-ad-journey-card"
-                );
-
-             // Responsive only
-             if (window.innerWidth > 768) return;
-
-             const hasHover = window.matchMedia("(hover: hover)").matches;
-
-             cards.forEach(card => {
-                 if (hasHover) {
-                     card.addEventListener("mouseenter", () => {
-                         card.classList.add("is-flipped");
-                        });
-                     card.addEventListener("mouseleave", () => {
-                         card.classList.remove("is-flipped");
-                        });
-                    }
-                 else {
-                     card.addEventListener("click", () => {
-                         card.classList.toggle("is-flipped");
-                        });
-                    }
-                });
-            });
-        </script>
-        <!-- End the Javascript Part → Flip Cards on Responsive -->
-
         <!-- Start the Javascript Part → Text Reveal on Scroll -->
         <script>
           document.addEventListener("DOMContentLoaded", function () {
@@ -4080,30 +4074,44 @@
 
         <!-- Start the Javascript Part → KKRF New Main Mobile Ad Journey Card -->
         <script>
-           document.addEventListener("DOMContentLoaded", function () {
+          document.addEventListener("DOMContentLoaded", function () {
               const cards = document.querySelectorAll(
                   ".kkrf-new-main-mobile-ad-journey-card"
                 );
+              const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry, index) => {
+                      if (entry.isIntersecting) {
+                         setTimeout(() => {
+                              entry.target.classList.add("is-visible");
+                            }, index * 120);
 
-              const observer = new IntersectionObserver(
-                  (entries) => {
-                      entries.forEach((entry, index) => {
-                          if (entry.isIntersecting) {
-                             // Stagger Effect
-                             setTimeout(() => {
-                                  entry.target.classList.add("is-visible");
-                                }, index * 120);
- 
-                             observer.unobserve(entry.target);
-                            }
-                        });
-                    },
-                   {
-                     threshold: 0.25
-                    }
+                          observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.25 });
+
+              cards.forEach(card => observer.observe(card));
+            });
+        </script>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              const cards = document.querySelectorAll(
+                 ".kkrf-new-main-mobile-ad-journey-card"
                 );
 
-              cards.forEach((card) => observer.observe(card));
+             const isMobile = window.matchMedia("(hover: none)").matches;
+
+             if (!isMobile) return; 
+
+             cards.forEach(card => {
+                  card.addEventListener("click", () => {
+                      cards.forEach(c => {
+                          if (c !== card) c.classList.remove("is-flipped");
+                        });
+                      card.classList.toggle("is-flipped");
+                    });
+                });
             });
         </script>
         <!-- End the Javascript Part → KKRF New Main Mobile Ad Journey Card -->

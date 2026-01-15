@@ -86,8 +86,8 @@ Industries-Sections
    energy-utilities.css
 2. financial-services-insurance.html
    financial-services-insurance.css
-3. heathcare-and-life.html
-   heathcare-and-life.css
+3. healthcare-and-life.html
+   healthcare-and-life.css
 4. industrial.html
    industrial.css
 5. media-and-entertainment.html

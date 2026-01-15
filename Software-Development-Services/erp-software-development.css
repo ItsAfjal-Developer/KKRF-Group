@@ -222,9 +222,7 @@ textarea {
     .hero-form-overlay {
         display: none !important;
     }
-}
 
-@media (max-width: 768px) {
     .hero {
         overflow: visible;
         background: #000;
@@ -277,9 +275,6 @@ textarea {
         padding: 12px 28px;
         white-space: nowrap;
     }
-}
-
-@media (max-width: 768px) {
 
     .hero-mobile-video-wrapper {
         position: relative;
@@ -869,7 +864,7 @@ textarea {
 
 /* ---------- VIDEO ---------- */
 .nft-metaverse-media {
-    height: 122.9%;
+    height: 125.8%;
     display: flex;
 }
 

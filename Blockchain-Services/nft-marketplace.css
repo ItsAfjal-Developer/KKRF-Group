@@ -478,7 +478,6 @@ textarea {
     color: #c5c5c5;
 }
 
-/* Desktop Layout: Left Tabs + Right Detail */
 .trusted-section .ts-layout {
     gap: 1px;
     display: flex;
@@ -489,7 +488,6 @@ textarea {
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* LEFT: list */
 .trusted-section .ts-sidebar {
     width: 38%;
     padding: 12px;

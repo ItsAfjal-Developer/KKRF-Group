@@ -673,7 +673,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 // Start Android Faq Item Bar
 document.addEventListener("DOMContentLoaded", function () {
     const faqItems = document.querySelectorAll(".android-faq-item");

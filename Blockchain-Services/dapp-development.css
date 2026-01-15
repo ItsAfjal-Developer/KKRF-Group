@@ -371,7 +371,6 @@ textarea {
     grid-template-columns: 1fr 1fr;
 }
 
-/* TEXT */
 .nft-metaverse-text h2 {
     color: #000;
     font-size: 36px;
@@ -388,8 +387,6 @@ textarea {
     margin-bottom: 16px;
 }
 
-
-/* VIDEO */
 .nft-metaverse-media {
     height: 129.5%;
     display: flex;

@@ -33,7 +33,6 @@ body {
   }
 }
 
-/* Sections stability */
 section,
 header,
 footer {
@@ -42,7 +41,6 @@ footer {
   overflow-x: hidden;
 }
 
-/* Prevent card flash */
 .feature-box,
 .partner-section,
 .trusted-section {
@@ -61,7 +59,6 @@ footer {
   max-width: 100%;
 }
 
-/* Force cards to take full width immediately */
 .feature-box {
   width: 100%;
   max-width: 100%;
@@ -69,7 +66,6 @@ footer {
   transform: none !important;
 }
 
-/* Mobile specific hard fix */
 @media (max-width: 768px) {
   .partner-inner {
     display: block;

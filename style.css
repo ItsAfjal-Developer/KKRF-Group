@@ -2193,8 +2193,6 @@ textarea {
 
 /*! End Clients Section Bar */
 
-
-
 /*! Start Trusted Section Bar */
 
 .trusted-section {
@@ -3252,7 +3250,7 @@ textarea {
         border-radius: 18px;
     }
 
-      .tech-number {
+    .tech-number {
         min-width: 32px;
         font-size: 14px;
     }
@@ -3261,7 +3259,7 @@ textarea {
         font-size: 14px;
         line-height: 1.4;
     }
-} 
+}
 
 /*! End Technologies Section Bar */
 
@@ -4065,6 +4063,7 @@ textarea {
 
 
 /*! Start Android Stack Section  */
+
 .android-stack-section {
     overflow: visible;
     position: relative;
@@ -4512,7 +4511,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-
     .android-contact-form input,
     .android-contact-form select,
     .android-contact-form textarea {
@@ -4690,7 +4688,6 @@ textarea {
 }
 
 @media (max-width: 480px) {
-
     .android-faq-container {
         margin: 0 14px;
     }
@@ -4859,14 +4856,12 @@ textarea {
 }
 
 
-/* Fade-Up Animation */
 @keyframes kkrfFadeUp {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
@@ -4931,9 +4926,7 @@ textarea {
     .kkrf-industry-item:not(:nth-last-child(-n + 3)) {
         border-bottom: 1px solid #acacac;
     }
-}
 
-@media (max-width: 768px) {
     .kkrf-industry-item:nth-child(3n) {
         border-right: none !important;
     }
@@ -5564,7 +5557,6 @@ body {
     padding: 70px 0 60px;
     font-family: "Inter", Arial, sans-serif;
 
-    /* animation base */
     opacity: 0;
     transform: translateY(80px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -5576,8 +5568,6 @@ body {
 }
 
 /* ================= KKRF WATERMARK ================= */
-
-/* watermark background image */
 .site-footer::before {
     content: "";
     position: absolute;
@@ -5743,7 +5733,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     .site-footer {
         position: relative;
         border-top-left-radius: 28px;
@@ -5782,7 +5771,6 @@ body {
         z-index: 2;
     }
 
-    /* ---------- BRAND ---------- */
     .footer-brand {
         max-width: 100%;
         text-align: center;
@@ -5793,14 +5781,12 @@ body {
         justify-content: center;
     }
 
-    /* ---------- SECTION TITLES ---------- */
     .footer-title {
         font-size: 15px;
         padding: 12px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
 
-    /* ---------- FOOTER BOTTOM ---------- */
     .footer-bottom-inner {
         margin-top: 36px;
         text-align: center;
@@ -5811,14 +5797,12 @@ body {
         justify-content: center;
     }
 
-    /* ---------- HELPERS ---------- */
     .hide-mobile {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-
     .footer-bottom-inner {
         text-align: center;
         flex-direction: column;

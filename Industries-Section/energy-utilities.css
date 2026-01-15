@@ -77,7 +77,6 @@
     transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, color 0.35s ease;
 }
 
-/* ================= Primary ================= */
 .btn-primary {
     color: black;
     background: linear-gradient(135deg,
@@ -111,7 +110,6 @@
     opacity: 1;
 }
 
-/* ================= Outline ================= */
 .btn-outline {
     color: #ffffff;
     backdrop-filter: blur(6px);
@@ -126,7 +124,6 @@
     box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
 }
 
-/* ================= Active (Press) ================= */
 .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
@@ -905,8 +902,7 @@
     display: none;
 }
 
-
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 992px) {
     .android-hero-section {
         padding: 40px 20px;

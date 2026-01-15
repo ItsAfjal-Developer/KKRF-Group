@@ -572,12 +572,13 @@ textarea {
 
 /*! End Industries Swiper Section Bar */
 
+
 /*! Start Recognition Process Section Bar */
 
 .recognition-section {
     padding: 40px 0;
     text-align: center;
-    background: black;
+    background: #000000;
     font-family: "Inter", sans-serif;
 }
 
@@ -589,18 +590,18 @@ textarea {
 
 .recognition-title {
     color: #f8f8f8;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 22px;
 }
 
 .recognition-btn {
     gap: 8px;
-    color: black;
     font-size: 15px;
     font-weight: 500;
+    color: #f8f8f8;
     padding: 12px 28px;
-    background: #f8f8f8;
+    background: #111;
     border-radius: 10px;
     display: inline-flex;
     align-items: center;
@@ -610,7 +611,6 @@ textarea {
 }
 
 .recognition-btn:hover {
-    color: #f8f8f8;
     background: #000;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
@@ -659,22 +659,17 @@ textarea {
 
 @media (max-width: 768px) {
     .recognition-title {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .recognition-image img {
-        height: 35%;
+        height: 55%;
     }
 }
 
 @media (max-width: 480px) {
     .recognition-title {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .recognition-section .container {
-        margin: 0 10px;
+        font-size: 18px;
     }
 
     .recognition-btn {
@@ -684,10 +679,12 @@ textarea {
 
     .recognition-image img {
         border-radius: 10px;
+        height: 55%;
     }
 }
 
 /*! End Recognition Process Section Bar */
+
 
 
 /*!  Start Kkrf Why Section Bar  */
