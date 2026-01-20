@@ -21,7 +21,7 @@
     object-position: center;
 }
 
-/* ================= OVERLAY ================= */
+/* ================ OVERLAY ================ */
 .kkrf-hero__overlay {
     inset: 0;
     z-index: 1;

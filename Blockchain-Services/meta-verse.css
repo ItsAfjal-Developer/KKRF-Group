@@ -497,7 +497,6 @@ textarea {
   grid-template-columns: 1fr 1fr;
 }
 
-
 /* LEFT */
 .mv-insights-title {
   font-size: 36px;
@@ -519,7 +518,6 @@ textarea {
   color: #d1d5db;
   margin-bottom: 10px;
 }
-
 
 /* RIGHT */
 .mv-insights-right {

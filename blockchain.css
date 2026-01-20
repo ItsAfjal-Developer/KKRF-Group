@@ -451,7 +451,6 @@ textarea {
     }
 }
 
-/* ========== ICON ========== */
 .feature-icon-wrapper {
     width: 64px;
     height: 64px;
@@ -463,7 +462,6 @@ textarea {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* ========== TEXT ========== */
 .feature-title {
     font-size: 1.1rem;
     font-weight: 700;
@@ -540,6 +538,7 @@ textarea {
 }
 
 /*! End Partner Section Bar */
+
 
 /*! Start Product Feature Section Bar */
 
@@ -728,7 +727,6 @@ textarea {
     padding-right: 20px;
   }
 
-  /* Container ko full-width allow karo */
   .container,
   .wrapper {
     max-width: 100%;

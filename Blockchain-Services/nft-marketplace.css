@@ -945,7 +945,6 @@ textarea {
     box-shadow: 0 28px 55px rgba(0, 0, 0, 0.45);
 }
 
-
 /* Numbers Row */
 .stats-items {
     gap: 36px;
@@ -956,7 +955,6 @@ textarea {
     justify-content: space-between;
 }
 
-
 /* Single Stats */
 .stat-item {
     flex: 1;
@@ -966,7 +964,6 @@ textarea {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     animation: statsItemUp 0.6s ease-out forwards;
 }
-
 
 /* Stagger Animation Delay */
 .stat-item:nth-child(1) {

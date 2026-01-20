@@ -293,7 +293,7 @@ body {
     opacity: 0.85;
 }
 
-/* ================= ANIMATIONS ================= */
+/* ================ ANIMATIONS ================ */
 @keyframes scaleUp {
     from {
         transform: scale(0.95);

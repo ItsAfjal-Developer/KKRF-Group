@@ -47,7 +47,7 @@
       });
     }
 
-    /* ========= SAFE ACTIVE CLASS (NO CRASH) ========= */
+    /* ======== SAFE ACTIVE CLASS (NO CRASH) ======== */
     const activeItem = document.querySelector(".tech-item.active");
     if (activeItem) {
       activeItem.classList.add("active");

@@ -715,7 +715,7 @@
     transform: translateX(4px);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 1024px) {
     .insights-title {
         font-size: 34px;

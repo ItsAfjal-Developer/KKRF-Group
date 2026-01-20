@@ -52,8 +52,6 @@ body.preload * {
     justify-content: space-between;
 }
 
-
-/* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
     max-width: 480px;
@@ -74,8 +72,6 @@ body.preload * {
     margin-bottom: 22px;
 }
 
-
-/* CTA BUTTON */
 .cta-button {
     color: #f8f8f8;
     font-weight: 600;
@@ -96,8 +92,6 @@ body.preload * {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
-/* RIGHT DESKTOP FORM */
 .contact-form {
     flex: 1;
     padding: 32px;
@@ -111,8 +105,6 @@ body.preload * {
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.45);
 }
 
-
-/* Close button – hidden on desktop */
 .form-close {
     top: 10px;
     right: 12px;
@@ -129,8 +121,6 @@ body.preload * {
     background: rgba(255, 255, 255, 0.1);
 }
 
-
-/* Form fields */
 .form-row {
     gap: 22px;
     display: flex;

@@ -1,4 +1,4 @@
-On 09 Jan -> All Services
+Complete Pages
 
 Artificial-Intelligence-Service
 
@@ -46,39 +46,7 @@ Devops-Services
 2. infrastructure-as-code.html
    infrastructure-as-code.css
 3. monitoring-and-logging.html
-   monitoring-and-logging.css   
-
-IT-Consulting-Service
-
-1. healthcare-it-consulting.html
-   healthcare-it-consulting.css
-2. it-outsourcing-services.html
-   it-outsourcing-services.css
-3. managed-it-services.html
-   managed-it-services.css   
-
-Mobile-App-Development-Sections
-
-1. android-app-development.html
-   android-app-development.css
-2. iosdevelopment.html
-   iosdevelopment.css
-3. mobile-app-development.html
-   mobile-app-development.css
-
-
-On 12 Jan
-
-Software-Development-Services
-
-1. ar-vr-development.html
-   ar-vr-development.css
-2. erp-software-development.html
-   erp-software-development.css
-3. iot-development.html
-   iot-development.css
-4. microservices.html
-   microservices.css          
+   monitoring-and-logging.css  
 
 Industries-Sections
 
@@ -99,7 +67,38 @@ Industries-Sections
 8. telecommunication.html
    telecommunication.css
 9. transportation-and-mobility.html
-   transportation-and-mobility.css
+   transportation-and-mobility.css    
+
+IT-Consulting-Service
+
+1. healthcare-it-consulting.html
+   healthcare-it-consulting.css
+2. it-outsourcing-services.html
+   it-outsourcing-services.css
+3. managed-it-services.html
+   managed-it-services.css   
+
+Mobile-App-Development-Sections
+
+1. android-app-development.html
+   android-app-development.css
+2. iosdevelopment.html
+   iosdevelopment.css
+3. mobile-app-development.html
+   mobile-app-development.css
+
+
+Software-Development-Services
+
+1. ar-vr-development.html
+   ar-vr-development.css
+2. erp-software-development.html
+   erp-software-development.css
+3. iot-development.html
+   iot-development.css
+4. microservices.html
+   microservices.css          
+
 
 Other Sections
 
@@ -108,6 +107,36 @@ Other Sections
 2. Contact-us.html
    Contact-us.css
 3. Blockchain-in-Austin.html
-   Blockchain-in-Austin.css  
-   
-       
+   Blockchain-in-Austin.css
+4. Home-Page.html
+   Home-Page.css
+ 
+
+Pending Pages
+
+1. alliances.html
+2. blog.html
+3. case-study.html
+4. company-overview.html
+5. leadeship-and-board.html
+6. press-media.html
+7. what-going-at-kkrf.html
+
+8. artificial-intelligence.html
+9. blockchain-service.html
+10. cloud-service.html
+11. data-analytics.html
+12. devops.html
+13. it-consulting.html
+14. software-development.html
+
+15. explore-now.html 
+16. life-at-kkrf.html
+17. position-open.html
+18. privacy-policy.html
+19. quality-first.html
+20. term-of-use.html
+21. view-all-news.html
+
+
+Today Work - Fixing All Bugs and many times I Testing on Responsive  

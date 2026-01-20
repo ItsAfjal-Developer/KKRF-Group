@@ -38,8 +38,6 @@
     justify-content: space-between;
 }
 
-
-/* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
     max-width: 480px;
@@ -61,8 +59,6 @@
     margin-bottom: 42px;
 }
 
-
-/* CTA BUTTON */
 .cta-button {
     color: #f8f8f8;
     font-weight: 600;
@@ -83,8 +79,6 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
-/* RIGHT DESKTOP FORM */
 .contact-form {
     flex: 1;
     padding: 32px;

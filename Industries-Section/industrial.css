@@ -899,7 +899,7 @@
     display: none;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 992px) {
     .android-hero-section {
         padding: 40px 20px;
