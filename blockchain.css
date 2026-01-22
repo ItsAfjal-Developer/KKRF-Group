@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100%;
 }
@@ -66,8 +67,6 @@ body.preload * {
     justify-content: space-between;
 }
 
-
-/* LEFT TEXT COLUMN */
 .hero-text {
     flex: 1;
     max-width: 480px;
@@ -88,8 +87,6 @@ body.preload * {
     margin-bottom: 22px;
 }
 
-
-/* CTA BUTTON */
 .cta-button {
     color: #f8f8f8;
     font-weight: 600;
@@ -110,8 +107,6 @@ body.preload * {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
-/* RIGHT DESKTOP FORM */
 .contact-form {
     flex: 1;
     padding: 32px;
@@ -140,7 +135,6 @@ body.preload * {
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.1);
 }
-
 
 .form-row {
     gap: 22px;
@@ -617,7 +611,6 @@ textarea {
 }
 
 /* ================================ ICON (BLACK & WHITE) ================================ */
-
 .stage-number {
     font-size: 13px;
     color: #9aa0a6;
@@ -652,7 +645,6 @@ textarea {
 }
 
 /* ================================ TEXT ================================ */
-
 .product-feature-title {
     font-size: 20px;
     font-weight: 700;
@@ -708,6 +700,7 @@ textarea {
 /*! End Product Feature Section Bar */
 
 @media (max-width: 768px) {
+
     .blockchain-wrapper,
     .container,
     .section {
@@ -718,19 +711,31 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-  .hero,
-  .blockchain-hero,
-  .hero-section {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
-  .container,
-  .wrapper {
-    max-width: 100%;
-  }
+    .hero,
+    .blockchain-hero,
+    .hero-section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
 
 .container {
@@ -739,19 +744,4 @@ textarea {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-@media (max-width: 1024px) {
-    .container {
-        max-width: 100%;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-}   
-
-@media (max-width: 1024px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
 }

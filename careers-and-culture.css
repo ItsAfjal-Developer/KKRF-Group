@@ -780,7 +780,6 @@ body.preload * {
   margin: 0 auto;
 }
 
-
 .kkrf-career-job-grid {
   gap: 24px;
   display: grid;
@@ -832,6 +831,7 @@ body.popup-open {
 }
 
 /*! End Careers Page PopUp Fix */
+
 
 /*! Start the Android Form Group Career Link */
 

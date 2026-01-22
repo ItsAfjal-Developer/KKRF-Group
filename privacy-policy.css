@@ -1,0 +1,301 @@
+/*! Start Hero Section Bar */
+
+.kkrf-privacy-hero {
+    padding: 64px 0;           
+    color: #f8f8f8;
+    background: #000;         
+}
+
+.kkrf-privacy-container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.kkrf-privacy-hero-inner {
+    text-align: center;
+}
+
+.kkrf-privacy-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.kkrf-privacy-subtitle {
+    font-size: 18px;
+    max-width: 920px;
+    font-weight: 600;
+    margin: 0 auto 8px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.kkrf-privacy-date {
+    font-size: 14px;
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .kkrf-privacy-hero {
+        padding: 48px 0;
+    }
+
+    .kkrf-privacy-title {
+        font-size: 32px;
+    }
+
+    .kkrf-privacy-subtitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kkrf-privacy-hero {
+        padding: 40px 0;
+    }
+
+    .kkrf-privacy-title {
+        font-size: 36px;
+    }
+
+    .kkrf-privacy-subtitle {
+        font-size: 14px;
+    }
+
+    .kkrf-privacy-date {
+        font-size: 13px;
+    }
+}
+
+/*! End Hero Section Bar */
+
+
+/*! Start KKRF Privacy Wrapper Section Bar */
+
+.kkrf-privacy-wrapper {
+    background: #000;
+    padding: 80px 0;
+}
+
+.kkrf-privacy-toc {
+    background: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: 14px;
+    padding: 36px;
+    margin-bottom: 72px;
+}
+
+.kkrf-privacy-toc-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.kkrf-privacy-toc-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 36px;
+}
+
+.kkrf-privacy-toc-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #cfcfcf;
+    transition: color 0.25s ease;
+}
+
+.kkrf-privacy-toc-list a span {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: grey;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kkrf-privacy-toc-list a:hover {
+    color: #ffffff;
+}
+
+.kkrf-privacy-content {
+    width: 100%;
+}
+
+.kkrf-privacy-section {
+    margin-bottom: 80px;
+}
+
+.kkrf-privacy-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.kkrf-privacy-section h2 span {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: grey;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.kkrf-privacy-section p {
+    font-size: 16px;
+    color: #cfcfcf;
+    margin-bottom: 14px;
+}
+
+.kkrf-privacy-section ul {
+    padding-left: 20px;
+    margin: 14px 0 18px;
+}
+
+.kkrf-privacy-section ul li {
+    font-size: 15px;
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.kkrf-privacy-section strong {
+    color: #ffffff;
+}
+
+.kkrf-privacy-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 28px;
+}
+
+.kkrf-privacy-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    background: #0d0d0d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.kkrf-privacy-table th,
+.kkrf-privacy-table td {
+    padding: 16px 18px;
+    text-align: left;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.kkrf-privacy-table th {
+    background: #111;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kkrf-privacy-table td {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.kkrf-privacy-table tr:last-child td {
+    border-bottom: none;
+}
+
+.kkrf-privacy-contact {
+    background: #0d0d0d;
+    border-left: 4px solid grey;
+    padding: 22px 26px;
+    border-radius: 8px;
+}
+
+.kkrf-privacy-contact p {
+    font-size: 15px;
+    color: #cfcfcf;
+    margin-bottom: 8px;
+}
+
+.kkrf-privacy-contact strong {
+    color: #ffffff;
+}
+
+.kkrf-privacy-section a {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .kkrf-privacy-container {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .kkrf-privacy-toc-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .kkrf-privacy-wrapper {
+        padding: 60px 0;
+    }
+
+    .kkrf-privacy-container {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .kkrf-privacy-section h2 {
+        font-size: 24px;
+    }
+
+    .kkrf-privacy-section p,
+    .kkrf-privacy-section ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kkrf-privacy-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .kkrf-privacy-toc {
+        padding: 24px;
+    }
+
+    .kkrf-privacy-section {
+        margin-bottom: 56px;
+    }
+
+    .kkrf-privacy-section h2 span {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+
+/*! Start KKRF Privacy Wrapper Section Bar */

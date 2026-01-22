@@ -318,7 +318,7 @@ body {
     }
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================ RESPONSIVE ================ */
 @media (max-width: 768px) {
     .popup {
         padding: 12px;

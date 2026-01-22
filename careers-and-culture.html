@@ -2626,32 +2626,64 @@
                         estimate
                     </h2>
 
-                    <form>
+                    <form id="consultationForm">
+
+                        <!-- NAME & EMAIL -->
                         <div class="row">
-                            <input type="text" placeholder="Full Name*"
-                                required>
-                            <input type="email" placeholder="E-Mail ID*"
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Full Name*"
+                                required
+                                oninput="this.value=this.value.replace(/[^A-Za-z ]/g,'')">
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="E-Mail ID*"
                                 required>
                         </div>
 
+                        <!-- PROJECT DESCRIPTION -->
                         <textarea
+                            id="project"
                             placeholder="Describe Your Project / Idea In Brief (Helps Us Come Back Better Prepared)"
                             autocomplete="off"
                             required></textarea>
 
+                        <!-- PHONE -->
                         <div class="row">
-                            <input type="text" placeholder="+91">
-                            <input type="text"
-                                placeholder="Contact Number*">
+                            <input
+                                type="text"
+                                id="contact"
+                                placeholder="Contact Number*"
+                                maxlength="10"
+                                required
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+                            <input
+                                type="text"
+                                id="contact"
+                                placeholder="Alternate Number*"
+                                maxlength="10"
+                                required
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'')">
                         </div>
 
+                        <!-- CAPTCHA & BUTTON -->
                         <div class="row action-row">
-                            <input type="text" placeholder="1 + 4 = ?"
-                                class="captcha">
+                            <input
+                                type="text"
+                                id="captcha"
+                                placeholder="1 + 4 = ?"
+                                class="captcha"
+                                required>
+
                             <button type="submit" class="cta-btn">
                                 Schedule Consultation
                             </button>
                         </div>
+
                     </form>
 
                     <!-- FORM FOOTER -->
@@ -2726,86 +2758,114 @@
 
                     <!-- RIGHT SIDE FORM (DESKTOP SIDE / MOBILE POPUP) -->
                     <form class="android-contact-form"
+                        id="androidContactForm"
                         aria-label="Contact Form">
 
+                        <!-- NAME -->
                         <div class="android-form-row">
                             <div class="android-form-group">
-                                <label for="firstName">First Name*</label>
-                                <input type="text" id="firstName"
-                                    name="firstName" required />
+                                <label for="androidFirstName">
+                                    First Name*
+                                </label>
+                                <input
+                                    type="text"
+                                    id="androidFirstName"
+                                    name="firstName"
+                                    required
+                                    oninput="this.value=this.value.replace(/[^A-Za-z ]/g,'')" />
                             </div>
+
                             <div class="android-form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName"
-                                    name="lastName" />
+                                <label for="androidLastName">
+                                    Last Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="androidLastName"
+                                    name="lastName"
+                                    oninput="this.value=this.value.replace(/[^A-Za-z ]/g,'')" />
                             </div>
                         </div>
 
+                        <!-- COMPANY & EMAIL -->
                         <div class="android-form-row">
                             <div class="android-form-group">
-                                <label for="company">Company Name</label>
+                                <label for="androidCompany">
+                                    Company Name
+                                </label>
                                 <input
                                     type="text"
-                                    id="company"
+                                    id="androidCompany"
                                     name="company"
                                     autocomplete="organization" />
                             </div>
+
                             <div class="android-form-group">
-                                <label for="email">Work Email*</label>
+                                <label for="androidEmail">
+                                    Work Email*
+                                </label>
                                 <input
                                     type="email"
-                                    id="email"
+                                    id="androidEmail"
                                     name="email"
                                     autocomplete="email"
                                     required />
                             </div>
                         </div>
 
+                        <!-- BUDGET -->
                         <div class="android-form-group">
-                            <label for="budget">
+                            <label for="androidBudget">
                                 What is your budget Range?*
                             </label>
-                            <select id="budget" name="budget" required>
-                                <option value>
+                            <select id="androidBudget" name="budget" required>
+                                <option value disabled selected>
                                     — Please Choose an Option —
                                 </option>
-                                <option value="5k-10k">
+                                <option value="50000-100000">
                                     50,000 - 100,000
                                 </option>
-                                <option value="10k-25k">
+                                <option value="100000-250000">
                                     100,000 - 250,000
                                 </option>
-                                <option value="25k-50k">
+                                <option value="250000-500000">
                                     250,000 - 500,000
                                 </option>
-                                <option value="50k+">500,000+</option>
+                                <option value="500000+">
+                                    500,000+
+                                </option>
                             </select>
                         </div>
 
+                        <!-- PROJECT -->
                         <div class="android-form-group">
-                            <label for="project">
-                                Let us know more about Your Project/Idea*
+                            <label for="androidProject">
+                                Let us know more about Your Project / Idea*
                             </label>
                             <textarea
-                                id="project"
+                                id="androidProject"
                                 name="project"
                                 rows="4"
                                 placeholder="Briefly describe your project or idea..."
                                 required></textarea>
                         </div>
 
+                        <!-- RECAPTCHA -->
                         <div class="android-recaptcha-box">
-                            <div class="g-recaptcha"
-                                data-sitekey="Write the Site Key">
+                            <div
+                                class="g-recaptcha"
+                                data-sitekey="WRITE_YOUR_SITE_KEY">
                             </div>
                         </div>
 
+                        <!-- SUBMIT -->
                         <button type="submit"
                             class="android-form-submit-button">
                             Send Me the Message
                         </button>
 
                     </form>
+
                 </div>
             </div>
         </section>
@@ -3759,6 +3819,103 @@
          .forEach(el => observer.observe(el));
         </script>
         <!-- End the Javascript Part → KKRF Career & Culture Lady Image -->
+
+        <!-- Start the Javascript Part → POP Up Form Fix -->
+        <script>
+          document.getElementById("consultationForm").addEventListener("submit", function (e) {
+               e.preventDefault();
+
+              const name = this.querySelector("#fullName").value.trim();
+              const email = this.querySelector("#email").value.trim();
+              const contact = this.querySelector("#contact").value.trim();
+              const captcha = this.querySelector("#captcha").value.trim();
+
+              // Name
+              if (!/^[A-Za-z ]+$/.test(name)) {
+                 alert("Full Name should contain only alphabets.");
+                 return;
+                }
+
+             // Email (FIXED)
+              if (!email || !email.includes("@") || !email.includes(".")) {
+                 alert("Please enter a valid Email ID.");
+                 return;
+                }
+
+             // Phone
+              if (!/^[0-9]{10}$/.test(contact)) {
+                 alert("Contact Number must be exactly 10 digits.");
+                 return;
+                }
+
+             // Captcha
+              if (captcha !== "5") {
+                 alert("Wrong captcha answer.");
+                 return;
+                }
+
+             alert("Form submitted successfully!");
+             this.submit();
+            });
+        </script>
+        <!-- End the Javascript Part → POP Up Form Fix -->
+
+        <!-- Start the Javascript Part → Hero Form Fix -->
+        <script>
+          document.getElementById("contactForm").addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              const firstName = this.querySelector("#firstName").value.trim();
+              const lastName = this.querySelector("#lastName").value.trim(); 
+              const email = this.querySelector("#email").value.trim();
+              const budget = this.querySelector("#budget").value;
+              const project = this.querySelector("#project").value.trim();
+
+              // First Name
+              if (!/^[A-Za-z ]+$/.test(firstName)) {
+                   alert("First Name should contain only alphabets.");
+                   return;
+                }
+
+             // Last Name (optional but validate if filled)
+             if (lastName && !/^[A-Za-z ]+$/.test(lastName)) {
+                  alert("Last Name should contain only alphabets.");
+                  return;
+                }
+
+             // Email (safe validation)
+             if (!email || !email.includes("@") || !email.includes(".")) {
+                  alert("Please enter a valid Work Email.");
+                  return;
+                }
+
+             // Budget
+             if (!budget) {
+                  alert("Please select your budget range.");
+                  return;
+                }
+
+             // Project
+             if (project.length < 10) {
+                  alert("Please describe your project in a bit more detail.");
+                  return;
+                }
+
+             // reCAPTCHA check
+             if (typeof grecaptcha !== "undefined") {
+                  const recaptchaResponse = grecaptcha.getResponse();
+                  if (!recaptchaResponse) {
+                      alert("Please verify that you are not a robot.");
+                      return;
+                    }
+                }
+
+              // Everything OK
+              alert("Message sent successfully!");
+              this.submit();
+            });
+        </script>
+        <!-- End the Javascript Part → Hero Form Fix -->
 
     </body>
 

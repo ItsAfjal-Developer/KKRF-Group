@@ -207,7 +207,6 @@ textarea {
     display: none;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .hero-content {
         gap: 40px;

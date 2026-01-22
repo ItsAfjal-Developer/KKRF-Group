@@ -278,7 +278,6 @@ body.preload * {
   padding: 0 20px;
 }
 
-/* ---------- Text ---------- */
 .kkrf-integrate-text {
   max-width: 900px;
   font-size: 18px;
@@ -287,7 +286,6 @@ body.preload * {
   color: #d1d1d1;
 }
 
-/* ---------- Slider ---------- */
 .kkrf-integrate-slider {
   overflow: hidden;
 }
@@ -304,7 +302,6 @@ body.preload * {
   display: none;
 }
 
-/* ---------- Card ---------- */
 .kkrf-integrate-card {
   flex: 0 0 300px;
   background: linear-gradient(180deg, #151515, #0c0c0c);
@@ -335,7 +332,6 @@ body.preload * {
   color: #bdbdbd;
 }
 
-/* ---------- Navigation ---------- */
 .kkrf-integrate-nav {
   display: flex;
   justify-content: center;
@@ -343,7 +339,6 @@ body.preload * {
   margin-top: 36px;
 }
 
-/* ===== BUTTON SHAPE FIX ===== */
 .kkrf-integrate-btn {
   width: 44px;
   height: 44px;
@@ -358,14 +353,12 @@ body.preload * {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-/* ===== HOVER (NO BLACK ICON) ===== */
 .kkrf-integrate-btn:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.45);
   color: #ffffff;
 }
 
-/* ===== SVG ICON ===== */
 .kkrf-integrate-btn svg {
   width: 18px;
   height: 18px;

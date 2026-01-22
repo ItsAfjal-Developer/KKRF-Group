@@ -54,7 +54,7 @@ document.querySelectorAll('.back-btn[data-close="true"]').forEach(btn => {
 });
 
 
-// ====== MOBILE NAV JS ======
+// ====== MOBILE NAV JS =====
 (function () {
     const body = document.body;
     const toggleBtn = document.querySelector(".nav-toggle");
@@ -725,7 +725,6 @@ document.querySelectorAll(".bi-accordion-header").forEach(header => {
         }
     });
 });
-
 
 
 // Start Pop Up Bar

@@ -364,7 +364,6 @@
     font-weight: 700;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
     .success-title {
         font-size: 32px;

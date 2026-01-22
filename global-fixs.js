@@ -60,6 +60,7 @@
   });
 })();
 
+
 document.addEventListener("DOMContentLoaded", () => {
   // Force browser to calculate layout once
   document.body.offsetHeight;
